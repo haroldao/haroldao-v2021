@@ -44,45 +44,33 @@ collections:
         fields:
           - { label: "Key", name: "key", widget: "string" }
           - { label: "Order", name: "order", widget: "number", default: 100 }
-          - {
-              label: "Parent",
-              name: "parent",
-              widget: "string",
-              required: false,
-              hint: "(Optional) Enter a matching parent key to set this a nested or child page",
-            }
-          - {
-              label: "Title",
-              name: "title",
-              widget: "string",
-              required: false,
-              hint: "(Optional) Enter alternate text for navigation link",
-            }
+          - { label: "Parent", name: "parent", widget: "string", required: false, hint: "(Optional) Enter a matching parent key to set this a nested or child page" }
+          - { label: "Title", name: "title", widget: "string",  required: false, hint: "(Optional) Enter alternate text for navigation link" }
       - { label: "Body", name: "body", widget: "markdown" }
   - label: "Globals"
-  name: "globals"
-  files:
-    - label: "Site Data"
-      name: "site_data"
-      delete: false
-      file: "_data/site.json"
-      fields:
-        - {label: "Site name", name: "name", widget: "string"}
-        - {label: "Site subtitle", name: "subtitle", widget: "string", required: false}
-        - {label: "Meta description", name: "description", widget: "string"}
-        - {label: "Site footer", name: "footer", widget: "string", required: false}
-        - {label: "Site Url", name: "url", widget: "string"}
-        - {label: "Github Url", name: "githubUrl", widget: "string"}
-        - {label: "Github branch", name: "githubBranch", widget: "string"}
-        - {label: "Navigation style", name: "navigationStyle", widget: "string"}
-        - {label: "Site emoji", name: "emoji", widget: "string", required: false}
-        - {label: "Enable search", name: "enableSearch", widget: "boolean"}
-        - {label: "Enable darkmode", name: "enableDarkMode", widget: "boolean"}
-        - {label: "Enable edit button", name: "enableEditButton", widget: "boolean"}
-        - {label: "Enable datestamp", name: "enableDatestamp", widget: "boolean"}
-        - {label: "Enable Github link", name: "enableGithubLink", widget: "boolean"}
-        - {label: "Enable contact form", name: "enableContact", widget: "boolean"}
-        - {label: "Enable Netlify CMS", name: "enableNetlifyCMS", widget: "boolean", default: false}
-        - {label: "Enable comments", name: "enableComments", widget: "boolean", default: false}
-        - {label: "Enable encryption", name: "enableEncryption", widget: "boolean", default: false}
-        - {label: "Enable page navigation", name: "enablePageNavigation", widget: "boolean", default: false}
+    name: "globals"
+    files:
+      - label: "Site Data"
+        name: "site_data"
+        delete: false
+        file: "_data/site.json"
+        fields:
+          - {label: "Site name", name: "name", widget: "string"}
+          - {label: "Site subtitle", name: "subtitle", widget: "string", required: false}
+          - {label: "Meta description", name: "description", widget: "string"}
+          - {label: "Site footer", name: "footer", widget: "string", required: false}
+          - {label: "Site Url", name: "url", widget: "string"}
+          - {label: "Github Url", name: "githubUrl", widget: "string"}
+          - {label: "Github branch", name: "githubBranch", widget: "string"}
+          - {label: "Navigation style", name: "navigationStyle", widget: "string"}
+          - {label: "Site emoji", name: "emoji", widget: "string", required: false}
+          - {label: "Enable search", name: "enableSearch", widget: "boolean"}
+          - {label: "Enable darkmode", name: "enableDarkMode", widget: "boolean"}
+          - {label: "Enable edit button", name: "enableEditButton", widget: "boolean"}
+          - {label: "Enable datestamp", name: "enableDatestamp", widget: "boolean"}
+          - {label: "Enable Github link", name: "enableGithubLink", widget: "boolean"}
+          - {label: "Enable contact form", name: "enableContact", widget: "boolean"}
+          - {label: "Enable Netlify CMS", name: "enableNetlifyCMS", widget: "boolean", default: false}
+          - {label: "Enable comments", name: "enableComments", widget: "boolean", default: false}
+          - {label: "Enable encryption", name: "enableEncryption", widget: "boolean", default: false}
+          - {label: "Enable page navigation", name: "enablePageNavigation", widget: "boolean", default: false}
