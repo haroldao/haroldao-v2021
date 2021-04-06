@@ -32,9 +32,9 @@ module.exports = function(eleventyConfig) {
     }
     return content;
   });
+  // Copy Static Files to /_Site
   eleventyConfig.addPassthroughCopy({
-    "./src/admin/config.yml": "./admin/config.yml",
-    "./src/admin/index.html": "./admin/index.html"
+    "./src/admin/config.yml": "./admin/config.yml"
   });
 
   return {
