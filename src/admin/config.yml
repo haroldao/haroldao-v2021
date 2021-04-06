@@ -11,12 +11,17 @@ backend:
   # name: git-gateway
 local_backend: true
 
-media_folder: static/img
 public_folder: /img
 
 logo_url: /logo.png
 
 publish_mode: editorial_workflow
+
+media_folder: static/img
+media_library:
+  name: uploadcare
+  config:
+    publicKey: d65a961a03514cd7eb70
 
 i18n:
   structure: multiple_folders
