@@ -20,6 +20,7 @@ module.exports = function(eleventyConfig) {
 
   eleventyConfig.setTemplateFormats(["liquid"]);
 
+  // Minify HTML
   eleventyConfig.addTransform("htmlmin", function(content, outputPath) {
     // Eleventy 1.0+: use this.inputPath and this.outputPath instead
     if( outputPath && outputPath.endsWith(".html")) {
