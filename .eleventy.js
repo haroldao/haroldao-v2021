@@ -1,4 +1,5 @@
 const fs = require("fs");
+const htmlmin = require("html-minifier");
 
 module.exports = function(eleventyConfig) {
   eleventyConfig.setBrowserSyncConfig({
@@ -16,4 +17,30 @@ module.exports = function(eleventyConfig) {
       }
     }
   });
+
+  eleventyConfig.setTemplateFormats(["liquid"]);
+
+  eleventyConfig.addTransform("htmlmin", function(content, outputPath) {
+    // Eleventy 1.0+: use this.inputPath and this.outputPath instead
+    if( outputPath && outputPath.endsWith(".html")) {
+      let minified = htmlmin.minify(content, {
+          useShortDoctype: true,
+          removeComments: true,
+          collapseWhitespace: true
+      });
+      return minified;
+    }
+    return content;
+  });
+
+  return {
+    dir: {
+      // ⚠️ These values are both relative to your input directory.
+      input: "src",
+      includes: "_includes",
+      layouts: "_layouts",
+      data: "data"
+    }
+  }
+
 };

@@ -11,5 +11,8 @@
   "license": "ISC",
   "devDependencies": {
     "@11ty/eleventy": "^0.12.1"
+  },
+  "dependencies": {
+    "html-minifier": "^4.0.0"
   }
 }
