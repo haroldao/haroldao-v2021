@@ -32,9 +32,13 @@ module.exports = function(eleventyConfig) {
     }
     return content;
   });
+  eleventyConfig.addPassthroughCopy({
+    "./src/admin/config.yml": "./admin/config.yml",
+    "./src/admin/index.html": "./admin/index.html"
+  });
 
   return {
-    dir: {
+    dir:{
       // ⚠️ These values are both relative to your input directory.
       input: "src",
       includes: "_includes",
