@@ -1,5 +1,6 @@
 const fs = require("fs");
 const htmlmin = require("html-minifier");
+const eleventyNavigationPlugin = require("@11ty/eleventy-navigation");
 
 module.exports = function(eleventyConfig) {
   eleventyConfig.setBrowserSyncConfig({
@@ -19,6 +20,7 @@ module.exports = function(eleventyConfig) {
   });
 
   eleventyConfig.setTemplateFormats(["liquid"]);
+  eleventyConfig.addPlugin(eleventyNavigationPlugin);
 
   // Minify HTML
   eleventyConfig.addTransform("htmlmin", function(content, outputPath) {
