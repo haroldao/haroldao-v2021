@@ -1,0 +1,21 @@
+<footer>
+    <span>Say Hello, I won't bite... 🤗</span>
+    <div>{{ site.socials.email }}</div>
+    © {{ "now" | date: "%Y" }} - ALL RIGHTS RESERVED.
+    <ul>
+    {% for item in site.socials %}
+    {%- comment -%}Exclude figma and email{%- endcomment -%}
+    {% if item[0] == 'figma' %}
+    {% continue %}
+    {% endif %}
+
+    {% if item[0] == 'email' %}
+    {% continue %}
+    {% endif %}
+        <li>
+            <a href="{{ item[1] }}">{{ item[0] }}</a>   
+        </li>
+    {% endfor %}
+    </ul>
+    
+</footer>
