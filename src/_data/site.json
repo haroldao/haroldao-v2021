@@ -1,7 +1,7 @@
 {
   "title": "Harold AO",
   "description": "Harold AO is a 17 year-old UI Developer and Designer.",
-  "url": "",
+  "url": "https://haroldao.com",
   "baseurl": "/",
   "googleAnalytics": "UA-160841327-1",
   "author": {
@@ -16,6 +16,7 @@
     "dribbble": "https://dribbble.com/haroldao",
     "codepen": "https://codepen.io/haroldao",
     "figma": "https://figma.com/haroldao",
-    "email": "contact@haroldao.com"
+    "email": "contact@haroldao.com",
+    "codesandbox": "https://codesandbox.io/u/haroldao"
   }
 }
