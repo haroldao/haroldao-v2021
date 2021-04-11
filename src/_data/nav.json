@@ -1,10 +1,6 @@
 {
   "pages": [
     {
-      "name": "Home",
-      "url": "/"
-    },
-    {
       "name": "Work",
       "url": "/work/"
     },
