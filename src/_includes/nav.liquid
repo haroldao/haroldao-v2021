@@ -1,13 +1,12 @@
-
 <header>
     <a href="/">
-        {% include logo, color:"green" %}
+        {% include logo, color:"white", width: "60px" %}
     </a>
     <nav>
         <ul>
-            {% for page in nav.pages %}
-            <li>
-                <a href="{{ page.url }}">{{ page.name }}</a>
+            {% for entry in nav.pages %}
+            <li  class="link {% if entry.url == page.url %}active{% endif %}">
+                <a href="{{ entry.url }}">{{ entry.name }}</a>
             </li>
             {% endfor %}
         </ul>
