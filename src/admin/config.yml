@@ -1,14 +1,14 @@
 # (Production)
-backend:
-  name: git-gateway
-  branch: main # Branch to update (optional; defaults to master)
+# backend:
+#   name: git-gateway
+#   branch: main # Branch to update (optional; defaults to master)
 
 # ↘ For Testing (Development)
-# backend:
-#   name: github
-#   repo: haroldao/haroldao-v2021
-#   branch: master
-#   # name: git-gateway
+backend:
+  name: github
+  repo: haroldao/haroldao-v2021
+  branch: main
+  # name: git-gateway
 local_backend: true
 
 public_folder: /img
@@ -67,81 +67,73 @@ collections:
         delete: false
         file: "src/_data/site.json"
         fields:
-          - { label: "Site name", name: "name", widget: "string" }
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Description", name: "description", widget: "string" }
           - {
-              label: "Site subtitle",
-              name: "subtitle",
+              label: "Google Analytics",
+              name: "googleAnalytics",
               widget: "string",
               required: false,
             }
-          - { label: "Meta description", name: "description", widget: "string" }
-          - {
-              label: "Site footer",
-              name: "footer",
-              widget: "string",
-              required: false,
-            }
-          - { label: "Site Url", name: "url", widget: "string" }
-          - { label: "Github Url", name: "githubUrl", widget: "string" }
-          - { label: "Github branch", name: "githubBranch", widget: "string" }
-          - {
-              label: "Navigation style",
-              name: "navigationStyle",
-              widget: "string",
-            }
-          - {
-              label: "Site emoji",
-              name: "emoji",
-              widget: "string",
-              required: false,
-            }
-          - { label: "Enable search", name: "enableSearch", widget: "boolean" }
-          - {
-              label: "Enable darkmode",
-              name: "enableDarkMode",
-              widget: "boolean",
-            }
-          - {
-              label: "Enable edit button",
-              name: "enableEditButton",
-              widget: "boolean",
-            }
-          - {
-              label: "Enable datestamp",
-              name: "enableDatestamp",
-              widget: "boolean",
-            }
+          - label: "Author"
+            name: "author"
+            widget: "object"
+            fields:
+              - { label: "Author Name", name: "name", widget: "string" }
+              - { label: "Author Biography", name: "bio", widget: "string" }
+              - { label: "Author Avatar", name: "avatar", widget: "image" }
+          - label: "Socials"
+            name: "socials"
+            widget: "object"
+            collapsed: false
+            fields:
+              - label: "Instagram"
+                name: "instagram"
+                widget: "string"
+                required: false
+              - label: "Github"
+                name: "github"
+                widget: "string"
+                required: false
+              - label: "Behance"
+                name: "behance"
+                widget: "string"
+                required: false
+              - label: "Dribbble"
+                name: "dribbble"
+                widget: "string"
+                required: false
+              - label: "Codepen"
+                name: "codepen"
+                widget: "string"
+                required: false
+              - label: "Figma"
+                name: "figma"
+                widget: "string"
+                required: false
+              - label: "Email"
+                name: "email"
+                widget: "string"
+                required: false
           - {
               label: "Enable Github link",
               name: "enableGithubLink",
               widget: "boolean",
+              required: false,
             }
-          - {
-              label: "Enable contact form",
-              name: "enableContact",
-              widget: "boolean",
-            }
-          - {
-              label: "Enable Netlify CMS",
-              name: "enableNetlifyCMS",
-              widget: "boolean",
-              default: false,
-            }
-          - {
-              label: "Enable comments",
-              name: "enableComments",
-              widget: "boolean",
-              default: false,
-            }
-          - {
-              label: "Enable encryption",
-              name: "enableEncryption",
-              widget: "boolean",
-              default: false,
-            }
-          - {
-              label: "Enable page navigation",
-              name: "enablePageNavigation",
-              widget: "boolean",
-              default: false,
-            }
+      - label: "Navigation"
+        name: "navigation"
+        delete: false
+        file: "src/_data/nav.json"
+        fields:
+          - label: "Pages"
+            name: "pages"
+            widget: "list"
+            collapsed: false
+            fields:
+              - label: "name"
+                name: "name"
+                widget: "string"
+              - label: "url"
+                name: "url"
+                widget: "string"
