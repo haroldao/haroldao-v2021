@@ -1,6 +1,10 @@
 {
+  "title": "Harold AO",
+  "description": "Harold AO is a 17 year-old UI Developer and Designer.",
+  "url": "",
+  "baseurl": "/",
   "googleAnalytics": "UA-160841327-1",
-  "author":{
+  "author": {
     "name": "Harold AO",
     "bio": "",
     "avatar": ""
