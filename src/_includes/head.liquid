@@ -1,1 +1,62 @@
-<meta name="description" content="">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+{% if title %}
+    <title>{{ title }}</title>
+{% else %}
+    <title>{{ site.title }}</title>
+{% endif %}
+
+<meta name="description" content="{{ description }}">
+<meta name="title" content="{{ title }}">
+  
+<!-- Open Graph / Facebook -->
+<meta property="og:type" content="website">
+<meta property="og:url" content="{{ page.url | url }}">
+<meta property="og:title" content="{{ title }}">
+<meta property="og:description" content="{{ description }}">
+
+{% if featuredImg %}
+<meta property="og:image" content="">
+{% else %}
+<meta property="og:image" content="">
+{% endif %}
+
+<!-- Twitter -->
+<meta property="twitter:card" content="summary_large_image">
+<meta property="twitter:url" content="{{ page.url | url }}">
+<meta property="twitter:title" content="{{ title }}">
+<meta property="twitter:description" content="{{ description }}">
+
+{% if featuredImg %}
+<meta property="twitter:image" content="">
+{% else %}
+<meta property="twitter:image" content="">
+{% endif %}
+  
+
+<link rel="stylesheet" href="{{ '/css/styles.css' | url }}" rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript>
+    <link
+        href="{{ '/css/styles.css' | url }}"
+        rel="stylesheet"
+        type="text/css"
+    />
+</noscript>
+
+<link rel="apple-touch-icon" sizes="180x180" href="../img/apple-touch-icon.png">
+<link rel="icon" href="" type="image/svg+xml">
+<link rel="icon" type="image/png" sizes="32x32" href="../img/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="../img/favicon-16x16.png">
+<link rel="manifest" href="../site.webmanifest">
+<link rel="mask-icon" href="../img/safari-pinned-tab.svg" color="#000000">
+<meta name="msapplication-TileColor" content="#000000">
+<meta name="theme-color" content="#ffffff">
+
+<script>window.onload=()=>{document.body.classList.add('loaded')}</script>
+
+
+<link rel=preconnect href=https://script.hotjar.com/ crossorigin>
+<link rel=preconnect href=https://vars.hotjar.com crossorigin>
+<link rel=preconnect href=https://vc.hotjar.io crossorigin>
+<link rel=preconnect href=https://in.hotjar.com crossorigin>
+
