@@ -1,21 +1,17 @@
 {
-  "enableGithubLink": true,
-  "githubBranch": " ",
-  "emoji": " ",
-  "enableEncryption": true,
-  "enablePageNavigation": true,
-  "enableSearch": true,
-  "name": " ",
-  "githubUrl": "github.com/haroldao",
-  "url": " ",
-  "enableDatestamp": true,
-  "enableComments": true,
-  "subtitle": " ",
-  "footer": " ",
-  "enableDarkMode": true,
-  "description": " ",
-  "enableContact": true,
-  "navigationStyle": " ",
-  "enableNetlifyCMS": true,
-  "enableEditButton": true
+  "googleAnalytics": "UA-160841327-1",
+  "author":{
+    "name": "Harold AO",
+    "bio": "",
+    "avatar": ""
+  },
+  "socials": {
+    "instagram": "https://instagram.com/harold.ao",
+    "github": "https//github.com/haroldao",
+    "behance": "https://be.net/haroldao",
+    "dribbble": "https://dribbble.com/haroldao",
+    "codepen": "https://codepen.io/haroldao",
+    "figma": "https://figma.com/haroldao",
+    "email": "contact@haroldao.com"
+  }
 }
