@@ -3,11 +3,19 @@
 <head>
 {% include head %}
 </head>
-<body class="{{bodyClass}}">
+<body class="{{bodyClass}}" style="background-color: black; color: white">
+    {% include nav %}
     {{ content }}
-
+    {% include footer %}
+    <!-- {{ page.path }} -->
     <!-- Netlify Identity Widget -->
     <!-- Needed only if you are using Netlify Identity feature -->
+    {% if page.url == "/" %}
     <script type="text/javascript" src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+    {% endif %}
+    <!-- Google Analytics -->
+    <script type="application/javascript">var doNotTrack=!1;doNotTrack||(window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)},ga.l=+new Date,ga('create','UA-160841327-1','auto'),ga('send','pageview'))</script>
+    <script async="" src="https://www.google-analytics.com/analytics.js"></script>
+    <script>(function(a,c,e,f,d,b){a.hj=a.hj||function(){(a.hj.q=a.hj.q||[]).push(arguments)},a._hjSettings={hjid:2296441,hjsv:6},d=c.getElementsByTagName('head')[0],b=c.createElement('script'),b.async=1,b.src=e+a._hjSettings.hjid+f+a._hjSettings.hjsv,d.appendChild(b)})(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=')</script>
 </body>
 </html>
