@@ -1,16 +1,20 @@
 {
-    "pages": [
-      {
-        "name": "Work",
-        "url": "/work/"
-      },
-      {
-        "name": "Uses",
-        "url": "/uses/"
-      },
-      {
-        "name": "About",
-        "url": "/about/"
-      }
-    ]
-  }
+  "pages": [
+    {
+      "name": "Home",
+      "url": "/"
+    },
+    {
+      "name": "Work",
+      "url": "/work/"
+    },
+    {
+      "name": "Uses",
+      "url": "/uses/"
+    },
+    {
+      "name": "About",
+      "url": "/about/"
+    }
+  ]
+}
