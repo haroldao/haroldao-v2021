@@ -1,7 +1,7 @@
 <footer>
     <span>Say Hello, I won't bite... 🤗</span>
     <div>{{ site.socials.email }}</div>
-    © {{ "now" | date: "%Y" }} - ALL RIGHTS RESERVED.
+    © {{ "now" | date: "%Y" }} -<br /> ALL RIGHTS RESERVED.
     <ul>
     {% for item in site.socials %}
     {%- comment -%}Exclude figma and email{%- endcomment -%}
@@ -16,6 +16,5 @@
             <a href="{{ item[1] }}">{{ item[0] }}</a>   
         </li>
     {% endfor %}
-    </ul>
-    
+    </ul>  
 </footer>
