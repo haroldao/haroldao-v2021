@@ -2,10 +2,20 @@
 <html lang="en">
 <head>
 {% include head %}
+<link rel="stylesheet" href="{{ 'css/styles.css' | url }}" rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript>
+    <link
+        href="{{ 'css/styles.css' | url }}"
+        rel="stylesheet"
+        type="text/css"
+    />
+</noscript>
 </head>
-<body class="{{bodyClass}}" style="background-color: black; color: white">
-    {% include nav %}
-    {{ content }}
+<body class="{{bodyClass}}">
+    {% include header %}
+    <main role="main">
+      {{ content }}  
+    </main>
     {% include footer %}
     <!-- {{ page.path }} -->
     <!-- Netlify Identity Widget -->
