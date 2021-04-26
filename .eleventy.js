@@ -42,9 +42,10 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addPassthroughCopy({
     "./src/admin/config.yml": "./admin/config.yml",
     "./src/admin/index.html": "./admin/index.html",
+    "./src/fonts/": "src/fonts"
   });
 
-  eleventyConfig.addPassthroughCopy('./src/fonts');
+  // eleventyConfig.addPassthroughCopy('./src/fonts');
 
   return {
     dir:{
