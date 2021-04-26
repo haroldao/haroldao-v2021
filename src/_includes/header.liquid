@@ -1,0 +1,28 @@
+<header>
+    <a href="/">
+        {% include logo, color:"white", width: "60px" %}
+    </a>
+    {% include nav %}
+</header>
+
+<style>
+    header{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 10px;
+    }
+    li{
+        display: inline-block;
+        list-style: none;
+        
+    }
+
+    a{
+        text-decoration: none;
+        color: white;
+    }
+    li:not(:last-child){
+        margin-right: 15px;
+    }
+</style>
