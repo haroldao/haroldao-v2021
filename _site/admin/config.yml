@@ -1,0 +1,139 @@
+# (Production)
+# backend:
+#   name: git-gateway
+#   branch: main # Branch to update (optional; defaults to master)
+
+# ↘ For Testing (Development)
+backend:
+  name: github
+  repo: haroldao/haroldao-v2021
+  branch: main
+  # name: git-gateway
+local_backend: true
+
+public_folder: /img
+
+logo_url: /logo.png
+
+publish_mode: editorial_workflow
+
+media_folder: static/img
+media_library:
+  name: uploadcare
+  config:
+    publicKey: d65a961a03514cd7eb70
+
+i18n:
+  structure: multiple_folders
+  locales: [en, fr]
+  default_locale: en
+
+collections:
+  - name: "pages"
+    label: "Page"
+    folder: "pages"
+    create: true # Change to true to allow editors to create new pages
+    slug: "{{slug}}"
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Publish Date", name: "date", widget: "datetime" }
+      - { label: "Permalink", name: "permalink", widget: "string" }
+      - label: "Navigation" # https://www.11ty.dev/docs/plugins/navigation/
+        name: "eleventyNavigation"
+        widget: "object"
+        fields:
+          - { label: "Key", name: "key", widget: "string" }
+          - { label: "Order", name: "order", widget: "number", default: 100 }
+          - {
+              label: "Parent",
+              name: "parent",
+              widget: "string",
+              required: false,
+              hint: "(Optional) Enter a matching parent key to set this a nested or child page",
+            }
+          - {
+              label: "Title",
+              name: "title",
+              widget: "string",
+              required: false,
+              hint: "(Optional) Enter alternate text for navigation link",
+            }
+      - { label: "Body", name: "body", widget: "markdown" }
+  - label: "Globals"
+    name: "globals"
+    files:
+      - label: "Site Data"
+        name: "site_data"
+        delete: false
+        file: "src/_data/site.json"
+        fields:
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Description", name: "description", widget: "string" }
+          - {
+              label: "Google Analytics",
+              name: "googleAnalytics",
+              widget: "string",
+              required: false,
+            }
+          - label: "Author"
+            name: "author"
+            widget: "object"
+            fields:
+              - { label: "Author Name", name: "name", widget: "string" }
+              - { label: "Author Biography", name: "bio", widget: "string" }
+              - { label: "Author Avatar", name: "avatar", widget: "image" }
+          - label: "Socials"
+            name: "socials"
+            widget: "object"
+            collapsed: false
+            fields:
+              - label: "Instagram"
+                name: "instagram"
+                widget: "string"
+                required: false
+              - label: "Github"
+                name: "github"
+                widget: "string"
+                required: false
+              - label: "Behance"
+                name: "behance"
+                widget: "string"
+                required: false
+              - label: "Dribbble"
+                name: "dribbble"
+                widget: "string"
+                required: false
+              - label: "Codepen"
+                name: "codepen"
+                widget: "string"
+                required: false
+              - label: "Figma"
+                name: "figma"
+                widget: "string"
+                required: false
+              - label: "Email"
+                name: "email"
+                widget: "string"
+                required: false
+          - {
+              label: "Enable Github link",
+              name: "enableGithubLink",
+              widget: "boolean",
+              required: false,
+            }
+      - label: "Navigation"
+        name: "navigation"
+        delete: false
+        file: "src/_data/nav.json"
+        fields:
+          - label: "Pages"
+            name: "pages"
+            widget: "list"
+            collapsed: false
+            fields:
+              - label: "name"
+                name: "name"
+                widget: "string"
+              - label: "url"
+                name: "url"
+                widget: "string"
