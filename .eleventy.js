@@ -1,6 +1,7 @@
 const fs = require("fs");
 const htmlmin = require("html-minifier");
 const eleventyNavigationPlugin = require("@11ty/eleventy-navigation");
+const pluginRespimg = require( "eleventy-plugin-respimg" );
 
 module.exports = function(eleventyConfig) {
   eleventyConfig.setBrowserSyncConfig({
@@ -24,6 +25,12 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addPlugin(eleventyNavigationPlugin);
   eleventyConfig.addWatchTarget("./src/scss/");
   eleventyConfig.addPassthroughCopy("./src/css");
+
+  // https://github.com/eeeps/eleventy-respimg
+  eleventyConfig.cloudinaryCloudName = 'haroldao';
+  eleventyConfig.srcsetWidths = [ 320, 640, 960, 1280, 1600, 1920, 2240, 2560 ];
+  eleventyConfig.fallbackWidth = 640;
+  eleventyConfig.addPlugin( pluginRespimg );
 
   // Minify HTML
   eleventyConfig.addTransform("htmlmin", function(content, outputPath) {
