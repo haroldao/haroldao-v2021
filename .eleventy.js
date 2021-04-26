@@ -16,11 +16,14 @@ module.exports = function(eleventyConfig) {
           res.end();
         });
       }
-    }
+    },
+    files: './_site/css/**/*.css'
   });
 
   eleventyConfig.setTemplateFormats(["liquid"]);
   eleventyConfig.addPlugin(eleventyNavigationPlugin);
+  eleventyConfig.addWatchTarget("./src/scss/");
+  eleventyConfig.addPassthroughCopy("./src/css");
 
   // Minify HTML
   eleventyConfig.addTransform("htmlmin", function(content, outputPath) {
@@ -38,8 +41,10 @@ module.exports = function(eleventyConfig) {
   // Copy Static Files to /_Site
   eleventyConfig.addPassthroughCopy({
     "./src/admin/config.yml": "./admin/config.yml",
-    "./src/admin/index.html": "./admin/index.html"
+    "./src/admin/index.html": "./admin/index.html",
   });
+
+  eleventyConfig.addPassthroughCopy('./src/fonts');
 
   return {
     dir:{
