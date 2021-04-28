@@ -1,71 +1,18 @@
-@font-face {
-    font-family: 'MonumentExtended-Regular';
-    src: url('/src/fonts/MonumentExtended-Regular.otf');
-    src: url('/src/fonts/MonumentExtended-Regular.eot?#iefix') format('embedded-opentype'),
-        url('/src/fonts/MonumentExtended-Regular.svg#MonumentExtended-Regular') format('svg'),
-        url('/src/fonts/MonumentExtended-Regular.ttf') format('truetype'),
-        url('/src/fonts/MonumentExtended-Regular.woff') format('woff'),
-        url('/src/fonts/MonumentExtended-Regular.woff2') format('woff2');
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap
-}
+//Global Styles
+@import 'global/reset';
+@import 'global/fonts';
+@import 'global/base';
 
-@font-face {
-    font-family: 'SuisseIntl-Regular';
-    src: url('/src/fonts/SuisseIntl-Regular.eot');
-    src: url('/src/fonts/SuisseIntl-Regular.eot?#iefix') format('embedded-opentype'),
-        url('/src/fonts/SuisseIntl-Regular.svg#SuisseIntl-Regular') format('svg'),
-        url('/src/fonts/SuisseIntl-Regular.ttf') format('truetype'),
-        url('/src/fonts/SuisseIntl-Regular.woff') format('woff'),
-        url('/src/fonts/SuisseIntl-Regular.woff2') format('woff2');
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap
-}
 
-*,*::before, *::after{
-    margin: 0;
-    padding: 0;
-    outline: none;
-    appearance: none;
-    box-sizing: border-box;
-}
 
-html,
-body{
-    height: 100%;
-}
 
-body {
-    background-color: black;
-    color: white;
-    font-family: "SuisseIntl-Regular";
-    font-weight: normal;
-    transition: all 1.6s cubic-bezier(0.25, 0.46, 0.45, 0.94);
-
-}
-
-h1,
-h2,
-h3 {
-    font-family: "MonumentExtended-Regular";
-    font-weight: normal;
-}
-
-a:hover {
-
-    opacity: .6;
-}
 
 img {
     vertical-align: middle;
     max-width: 100%;
 }
 
-.container{
-    padding-top: 150px;
-}
+
 
 
 .background__shape {

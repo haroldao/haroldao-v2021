@@ -1,0 +1,24 @@
+body {
+    background-color: black;
+    color: white;
+    font-family: "SuisseIntl-Regular";
+    font-weight: normal;
+    transition: all 1.6s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+
+}
+
+h1,
+h2,
+h3 {
+    font-family: "MonumentExtended-Regular";
+    font-weight: normal;
+}
+
+a:hover {
+
+    opacity: .6;
+}
+
+.container{
+    padding-top: 150px;
+}
