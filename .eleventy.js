@@ -55,8 +55,6 @@ module.exports = function(eleventyConfig) {
     "node_modules/locomotive-scroll/dist/locomotive-scroll.js": "./js/locomotive-scroll.js"
   });
 
-  // eleventyConfig.addPassthroughCopy('./src/assets');
-
   return {
     dir:{
       // ⚠️ These values are both relative to your input directory.
