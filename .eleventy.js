@@ -52,7 +52,7 @@ module.exports = function(eleventyConfig) {
     "./src/admin/index.html": "./admin/index.html",
     "./src/fonts/": "src/fonts",
     "./src/assets/": "/",
-    "node_modules/locomotive-scroll/dist/locomotive-scroll.js": "./js/locomotive-scroll.js"
+    "node_modules/locomotive-scroll/dist/locomotive-scroll.min.js": "./js/locomotive-scroll.min.js"
   });
 
   return {
