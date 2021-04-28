@@ -51,10 +51,11 @@ module.exports = function(eleventyConfig) {
     "./src/admin/config.yml": "./admin/config.yml",
     "./src/admin/index.html": "./admin/index.html",
     "./src/fonts/": "src/fonts",
+    "./src/assets/": "/",
     "node_modules/locomotive-scroll/dist/locomotive-scroll.js": "./js/locomotive-scroll.js"
   });
 
-  // eleventyConfig.addPassthroughCopy('./src/fonts');
+  // eleventyConfig.addPassthroughCopy('./src/assets');
 
   return {
     dir:{
