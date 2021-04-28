@@ -25,6 +25,7 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addPlugin(eleventyNavigationPlugin);
   eleventyConfig.addWatchTarget("./src/scss/");
   eleventyConfig.addPassthroughCopy("./src/css");
+  eleventyConfig.addPassthroughCopy("./src/js");
 
   // https://github.com/eeeps/eleventy-respimg
   eleventyConfig.cloudinaryCloudName = 'haroldao';
@@ -49,7 +50,8 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addPassthroughCopy({
     "./src/admin/config.yml": "./admin/config.yml",
     "./src/admin/index.html": "./admin/index.html",
-    "./src/fonts/": "src/fonts"
+    "./src/fonts/": "src/fonts",
+    "node_modules/locomotive-scroll/dist/locomotive-scroll.js": "./js/locomotive-scroll.js"
   });
 
   // eleventyConfig.addPassthroughCopy('./src/fonts');
