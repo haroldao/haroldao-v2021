@@ -11,6 +11,11 @@
         align-items: center;
         justify-content: space-between;
         padding: 0 10px;
+        width: 100%;
+        top: 0;
+        left: 0;
+        position: fixed;
+        z-index: 999999;
     }
     li{
         display: inline-block;
@@ -25,4 +30,16 @@
     li:not(:last-child){
         margin-right: 15px;
     }
+    header li {
+            text-transform: uppercase;
+    }
+    @media screen and (min-width: 900px){
+        header li {
+            text-transform: uppercase;
+            padding: 10px 40px;
+            border: solid 1px;
+            border-radius: 30px;    
+        }
+    }
+    
 </style>

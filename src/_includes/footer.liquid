@@ -1,20 +1,36 @@
-<footer>
+<footer >
     <span>Say Hello, I won't bite... 🤗</span>
     <div>{{ site.socials.email }}</div>
-    © {{ "now" | date: "%Y" }} -<br /> ALL RIGHTS RESERVED.
-    <ul>
-    {% for item in site.socials %}
-    {%- comment -%}Exclude figma and email{%- endcomment -%}
-    {% if item[0] == 'figma' %}
-    {% continue %}
-    {% endif %}
+    <div class="footer__two">
+        © {{ "now" | date: "%Y" }} -<br /> ALL RIGHTS RESERVED.
+        <ul>
+        {% for item in site.socials %}
+        {%- comment -%}Exclude figma and email{%- endcomment -%}
+        {% if item[0] == 'figma' %}
+        {% continue %}
+        {% endif %}
 
-    {% if item[0] == 'email' %}
-    {% continue %}
-    {% endif %}
-        <li>
-            <a href="{{ item[1] }}">{{ item[0] }}</a>   
-        </li>
-    {% endfor %}
-    </ul>  
+        {% if item[0] == 'email' %}
+        {% continue %}
+        {% endif %}
+            <li>
+                <a href="{{ item[1] }}">{{ item[0] }}</a>   
+            </li>
+        {% endfor %}
+        </ul>
+    </div>
 </footer>
+
+<style>
+    footer .footer__two{
+        /* min-height: 60px; */
+        height: auto;
+        padding-top: 120px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    footer li{
+        text-transform: uppercase;
+    }
+</style>
