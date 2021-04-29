@@ -1,9 +1,9 @@
 body {
     background-color: black;
     color: white;
-    font-family: "SuisseIntl-Regular";
+    font-family: $suisse;
     font-weight: normal;
-    transition: all 1.6s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    transition: all 1.6s $cubic-bezier-1;
     overflow: hidden;
     width: 100%;
 
@@ -12,15 +12,26 @@ body {
 h1,
 h2,
 h3 {
-    font-family: "MonumentExtended-Regular";
+    font-family: $monument;
     font-weight: normal;
 }
 
-a:hover {
-
-    opacity: .6;
+a{
+    transition: all .7s $cubic-bezier-1;
+    &:hover{
+        opacity: .6;
+    }
 }
+
 
 .container{
     padding-top: 150px;
+}
+
+.canela{
+    font-family: $canela;
+}
+
+.monument{
+    font-family: $monument;
 }
