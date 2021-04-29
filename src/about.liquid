@@ -1,11 +1,14 @@
 ---
-layout: default.liquidc
+layout: default.liquid
 title: "About Harold AO"
 description: about
+bodyClass: "about__page"
 ---
-<div>
-    <h1>ABOUT ME</h1>
-    <img loading="lazy" src="https://ucarecdn.com/68a251d4-fdd8-46c3-8af6-747039219301/-/format/webp/" alt="Harold AO portrait">
+<div class="about__page">
+    <section class="about__introduction">
+        <h1>ABOUT ME</h1>
+        <img loading="lazy" src="https://ucarecdn.com/68a251d4-fdd8-46c3-8af6-747039219301/-/format/webp/" alt="Harold AO portrait">
+    </section>
     <h2>Hi. I am Harold AO. I'm a young 17 years-old developer and designer.</h2>
 
     <hr>
@@ -21,11 +24,12 @@ description: about
     world of creativity.
     Through this, I have learned self-taught web development, UI design, graphic design, and some video animation
     (motion design).</p>
-
-    <small>INFO</small>
-    <p>I have 4+ years of experience working on side-projects and with clients.
-    ... But my skills don't stop there. I'm constantly looking for learning new things and new experiences in this vast world of creativity.
-    Through this, I have learned self-taught web development, UI design, graphic design, and some video animation (motion design).</p>
+    <div data-scroll-repeat="true" data-scroll id="sticky" class="about__info" style="height: auto;margin-top:80px; margin: 80px 10px; display: flex; justify-content: space-between;">
+        <small style="align-self: flex-start;" data-scroll data-scroll-sticky data-scroll-target="#sticky" data-scroll-repeat="true">INFO</small>
+        <p data-scroll style="width: 50%;" class="anim"> I have 4+ years of experience working on side-projects and with clients.
+        ... But my skills don't stop there. I'm constantly looking for learning new things and new experiences in this vast world of creativity.
+        Through this, I have learned self-taught web development, UI design, graphic design, and some video animation (motion design).</p>
+    </div>
 
     <small>EDUCATION</small>
     <!-- Images/Logos here -->
@@ -44,4 +48,10 @@ description: about
     Video Editing
     Packaging Design
     </p>
+
+    <div>
+        <blockquote class="canela">
+            To create compelling websites, products, and experiences, I use my critical thinking skills and keen eye for details.
+        </blockquote>
+    </div>
 </div>
