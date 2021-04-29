@@ -5,25 +5,27 @@ description: about
 bodyClass: "about__page"
 ---
 <div class="about__page">
-    <section class="about__introduction">
-        <h1>ABOUT ME</h1>
+    <section class="about__introduction" data-scroll>
+        <h1 data-scroll data-scroll-speed="1.2">ABOUT ME</h1>
         <img loading="lazy" src="https://ucarecdn.com/68a251d4-fdd8-46c3-8af6-747039219301/-/format/webp/" alt="Harold AO portrait">
     </section>
-    <h2>Hi. I am Harold AO. I'm a young 17 years-old developer and designer.</h2>
-
+    <section class="little__intro">
+        <h2>Hi. I am Harold AO. I'm a young 17 years-old developer and designer.</h2>
+    </section>
     <hr>
-
-    <span>Location</span>
-    <span>Poitiers (France)</span>
-
-    <span>Time</span>
-    <span>12:12AM</span>
-
-    <p>I have 4+ years of experience working on side-projects and with clients.
-    ... But my skills don't stop there. I'm constantly looking for learning new things and new experiences in this vast
-    world of creativity.
-    Through this, I have learned self-taught web development, UI design, graphic design, and some video animation
-    (motion design).</p>
+    <section class="location__time">
+        <div class="location">
+            <span class="label">Location</span>
+            <p>Poitiers (France)</p>
+        </div>
+        <div class="locale__time">
+            <span class="label">Time</span>
+            <p>12:12AM</p>
+        </div>
+    </section>
+    <section class="presentation">
+        <p>I have 4+ years of experience working on side-projects and with clients. ... But my skills don't stop there. I'm constantly looking for learning new things and new experiences in this vast world of creativity. Through this, I have learned self-taught web development, UI design, graphic design, and some video animation (motion design).</p>
+    </section>
     <div data-scroll-repeat="true" data-scroll id="sticky" class="about__info" style="height: auto;margin-top:80px; margin: 80px 10px; display: flex; justify-content: space-between;">
         <small style="align-self: flex-start;" data-scroll data-scroll-sticky data-scroll-target="#sticky" data-scroll-repeat="true">INFO</small>
         <p data-scroll style="width: 50%;" class="anim"> I have 4+ years of experience working on side-projects and with clients.
