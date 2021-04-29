@@ -1,5 +1,7 @@
+@import '../utils/variables';
+
 @font-face {
-    font-family: 'MonumentExtended-Regular';
+    font-family: $monument;
     src: url('/src/fonts/MonumentExtended-Regular.otf');
     src: url('/src/fonts/MonumentExtended-Regular.eot?#iefix') format('embedded-opentype'),
         url('/src/fonts/MonumentExtended-Regular.svg#MonumentExtended-Regular') format('svg'),
@@ -12,7 +14,7 @@
 }
 
 @font-face {
-    font-family: 'SuisseIntl-Regular';
+    font-family: $suisse;
     src: url('/src/fonts/SuisseIntl-Regular.eot');
     src: url('/src/fonts/SuisseIntl-Regular.eot?#iefix') format('embedded-opentype'),
         url('/src/fonts/SuisseIntl-Regular.svg#SuisseIntl-Regular') format('svg'),
@@ -25,13 +27,13 @@
 }
 
 @font-face {
-    font-family: 'Canela-Regular';
+    font-family: $canela;
     src: url('/src/fonts/Canela-Regular.eot');
     src: url('/src/fonts/Canela-Regular.eot?#iefix') format('embedded-opentype'),
-         url('/src/fonts/Canela-Regular.svg#Canela-Regular') format('svg'),
-         url('/src/fonts/Canela-Regular.ttf') format('truetype'),
-         url('/src/fonts/Canela-Regular.woff') format('woff'),
-         url('/src/fonts/Canela-Regular.woff2') format('woff2');
+        url('/src/fonts/Canela-Regular.svg#Canela-Regular') format('svg'),
+        url('/src/fonts/Canela-Regular.ttf') format('truetype'),
+        url('/src/fonts/Canela-Regular.woff') format('woff'),
+        url('/src/fonts/Canela-Regular.woff2') format('woff2');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
