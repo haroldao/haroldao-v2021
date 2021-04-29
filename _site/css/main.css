@@ -111,6 +111,7 @@ body {
   font-weight: normal;
   transition: all 1.6s cubic-bezier(0.25, 0.46, 0.45, 0.94);
   overflow: hidden;
+  width: 100%;
 }
 
 h1,
@@ -128,6 +129,17 @@ a:hover {
   padding-top: 150px;
 }
 
+section, footer {
+  opacity: 0;
+  transition: all 2s cubic-bezier(0.79, 0.31, 0, 0.93);
+}
+section.is-inview, footer.is-inview {
+  opacity: 1;
+}
+section.is-inview .anim, footer.is-inview .anim {
+  transform: translateY(0);
+}
+
 img {
   vertical-align: middle;
   max-width: 100%;
@@ -139,9 +151,6 @@ img {
   left: 0;
   pointer-events: none;
   z-index: -10;
-  animation: rotate infite;
-  transform-origin: center right;
-  transform: scale(3);
 }
 
 @keyframes rotate {
