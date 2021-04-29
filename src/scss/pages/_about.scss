@@ -1,19 +1,109 @@
 .about__page{
+    line-height: 1.2;
     .about__introduction{
         h1{
             text-align: center;
+            font-size: 9vw;
+            max-width: 700px;
+            margin: 0 auto;
+            position: relative;
 
         }
         img{
             width: 100vw; // Full width even on wide screens
+            @include media(">desktop"){
+                margin-top: -100px;
+                padding: 0 $container-padding-mobile;
+                border-radius: $border-radius;
+            }
         }
     }
-    h2{
-        font-family: "SuisseIntl-Regular";
+    .little__intro{
+        @extend %container;
+        max-width: 1130px;
+        margin-top: 4rem;
+        margin-bottom: 6rem;
+        h2{
+            font-family: "SuisseIntl-Regular";
+            font-size: 7vw;
+            text-transform: uppercase;
+        }
     }
-    p{
-        font-size: calc( 100vw / 375 * 15 );
+    hr{
+        @extend %container;
     }
+    .location__time{
+        @extend %container;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 200px;
+        .label{
+            margin-bottom: .4rem;
+            font-size: 1.15rem;
+        }
+        p{
+            font-size: 1.4rem;
+        }
+        .location{
+            display: flex;
+            flex-direction: column;
+        }
+        .locale__time{
+            display: flex;
+            flex-direction: column;
+            text-align: end;
+        }
+        
+    }
+    .presentation{
+        @extend %container;
+        font-size: 2rem;
+        text-transform: uppercase;
+    }
+    .about__languages{
+        ul{
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+            height: 100px;
+            flex-wrap: wrap;
+            // li{
+            // }
+        }
+    }
+    .about__long-description{
+        flex-direction: column;
+        p{
+            font-size: 2rem;
+            width: auto !important;
+        }
+        @include media(">desktop"){
+            flex-direction: unset;
+            p{
+                width: 50% !important;
+            }
+        }
+    }
+    .section-50{
+        @extend %container;
+        height: auto;
+        margin-top:80px;
+        margin-top: 80px;
+        margin-bottom: 80px;
+        display: flex;
+        justify-content: space-between;
+        small{
+            align-self: flex-start;
+            width: 50%;
+        }
+        p{
+            width: 50%;
+        }
+    }
+    // p{
+    //     font-size: calc( 100vw / 375 * 15 );
+    // }
     small{
         transition: all .1s ease;
         &.is-inview{
@@ -27,11 +117,5 @@
         max-width: 900px;
         margin: 100px auto;
     }
-}
 
-@media screen and (min-width: 900px){
-    .about__page p{
-        line-height: 1.2;
-        font-size: calc( 100vw / 900 * 15 );
-    }
 }
