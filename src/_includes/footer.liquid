@@ -1,7 +1,12 @@
-<footer >
-    <span>Say Hello, I won't bite... 🤗</span>
-    <a href="mailto:{{ site.socials.email }}">{{ site.socials.email }}</a>
-    <div class="footer__two">
+<footer data-scroll>
+    <div class="footer__one">
+        <span>Say Hello, I won't bite... 🤗</span>
+        <div class="contact__mail">
+            <a href="mailto:{{ site.socials.email }}">{{ site.socials.email }}</a>
+        </div>
+    </div>
+   
+    <div class="footer__two anim">
         © {{ "now" | date: "%Y" }} -<br /> ALL RIGHTS RESERVED.
         <ul>
         {% for item in site.socials %}
@@ -22,13 +27,39 @@
 </footer>
 
 <style>
+    footer{
+        overflow: hidden;
+        margin: 14vh 10px 40px;
+        padding-bottom: 2rem;
+    }
+    .footer__one{
+        text-align: center;
+    }
+    footer .contact__mail{
+        font-family: 'MonumentExtended-Regular';
+        font-size: 5vw;
+    }
     footer .footer__two{
         /* min-height: 60px; */
         height: auto;
         padding-top: 120px;
         display: flex;
-        align-items: center;
-        justify-content: space-between;
+        flex-direction: column;
+        transform: translateY(100%);
+        transition: all 2s cubic-bezier(0.79, 0.31, 0, 0.93);
+    }
+    footer ul{
+        margin-top: 1rem;
+    }
+    @media screen and (min-width: 900px){
+        footer .footer__two{
+            flex-direction: row;
+            align-items: flex-end;
+            justify-content: space-between;
+        }
+        footer ul{
+            margin-top: 0;
+        }
     }
     footer li{
         text-transform: uppercase;

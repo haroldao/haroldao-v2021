@@ -5,6 +5,16 @@
 
 
 
+section, footer{
+    opacity: 0;
+    transition: all 2s cubic-bezier(0.79, 0.31, 0, 0.93);
+    &.is-inview{
+        opacity: 1;
+        .anim{
+            transform: translateY(0);
+        }
+    }
+}
 
 
 img {
@@ -21,10 +31,10 @@ img {
     left: 0;
     pointer-events: none;
     z-index: -10;
-    animation: rotate infite;
+    // animation: rotate infite;
     // animation: rotate 20s infinite forwards linear;
-    transform-origin: center right;
-    transform: scale(3);
+    // transform-origin: center right;
+    // transform: scale(3);
 }
 
 @keyframes rotate {
