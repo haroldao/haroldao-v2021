@@ -4,14 +4,17 @@ footer{
     padding-bottom: 2rem;
     .footer__one{
         text-align: center;
-
         .contact__mail{
             font-family: 'MonumentExtended-Regular';
             font-size: 5vw;
         }
     }
-
     .footer__two{
+        @include media(">desktop"){
+            flex-direction: row;
+            align-items: flex-end;
+            justify-content: space-between;
+        }
         /* min-height: 60px; */
         height: auto;
         padding-top: 120px;
@@ -19,23 +22,19 @@ footer{
         flex-direction: column;
         transform: translateY(100%);
         transition: all 2s $cubic-bezier-2;
-
         ul{
+            @include media(">desktop"){
+                margin-top: 0;
+            }
             margin-top: 1rem;
             li{
                 text-transform: uppercase;
+                display: inline-block;
+                list-style: none;
+                &:not(:last-child){
+                    margin-right: 15px;
+                }
             }
         }
-    }
-}
-
-@media screen and (min-width: 900px){
-    footer .footer__two{
-        flex-direction: row;
-        align-items: flex-end;
-        justify-content: space-between;
-    }
-    footer ul{
-        margin-top: 0;
     }
 }
