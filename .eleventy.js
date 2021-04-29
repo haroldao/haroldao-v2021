@@ -1,3 +1,4 @@
+// @see https://www.11ty.io/docs/config/
 const fs = require("fs");
 const htmlmin = require("html-minifier");
 const eleventyNavigationPlugin = require("@11ty/eleventy-navigation");
