@@ -1,11 +1,15 @@
 body {
-    background-color: black;
-    color: white;
+    background-color: $c-black;
+    color: $c-white;
     font-family: $suisse;
     font-weight: normal;
     transition: all 1.6s $cubic-bezier-1;
     overflow: hidden;
     width: 100%;
+    font-size: calc(100vw / 320 * 10);
+    @include media(">tablet"){
+        font-size: calc(100vw / 768 * 10);
+    }
 
 }
 
@@ -46,4 +50,7 @@ a{
 
 .visually-hidden{
     visibility: hidden;
+}
+.uppercase{
+    text-transform: uppercase;
 }
