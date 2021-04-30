@@ -1,0 +1,52 @@
+.uses__page{
+    @extend %container;
+    h1{
+        text-align: center;
+        text-transform: uppercase;
+        font-size: 9vw;
+        margin: 0 auto;
+        max-width: 650px;
+    }
+    h2{
+        font-family: $canela;
+        transition: all .5s $cubic-bezier-1;
+        transform: translateY(104%);
+        transition-delay: .7s;
+    }
+    .overflow-h{
+        margin-bottom: 1rem;
+    }
+    h3{
+        font-family: $suisse;
+        text-transform: capitalize;
+    }
+    section{
+        display: flex;
+        flex-wrap: wrap;
+        flex: auto;
+        margin-top: 5rem;
+        @include media(">tablet"){
+            margin-top: 5rem;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+        }
+        .is-inview{
+            h2{
+                transform: translateX(0);
+            }
+        }
+        .part{
+            margin-bottom: 4rem;
+            // margin-right: 1rem;
+            max-width: 50vw;
+            h3{
+                line-height: 1.2;
+                &::before{
+                    content: "⨯ ";
+                    padding-right: 4px;
+                }
+            
+            }
+        }
+    }
+}
