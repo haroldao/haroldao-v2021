@@ -53,7 +53,10 @@ module.exports = function(eleventyConfig) {
     "./src/admin/index.html": "./admin/index.html",
     "./src/fonts/": "src/fonts",
     "./src/assets/": "/",
-    "node_modules/locomotive-scroll/dist/locomotive-scroll.min.js": "./js/locomotive-scroll.min.js"
+    "node_modules/locomotive-scroll/dist/locomotive-scroll.min.js": "./js/locomotive-scroll.min.js",
+    "node_modules/splitting/dist/splitting-lite.js": "./js/splitting-lite.js",
+    "node_modules/splitting/dist/splitting.css": "./css/splitting.css",
+    "node_modules/splitting/dist/splitting-cells.css": "./css/splitting-cells.css"
   });
 
   return {
