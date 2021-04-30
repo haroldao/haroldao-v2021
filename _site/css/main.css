@@ -1,4 +1,4 @@
-.about__page .section-50, .about__page .presentation, .about__page .location__time, .about__page hr, .about__page .little__intro {
+.about__page .my-philosophy, .about__page .section-50, .about__page .presentation, .about__page .location__time, .about__page hr, .about__page .little__intro {
   margin-right: 10px;
   margin-left: 10px;
 }
@@ -419,6 +419,10 @@ footer .footer__two ul li:not(:last-child) {
   height: 100px;
   flex-wrap: wrap;
 }
+.about__page .about__languages ul li .accent {
+  color: greenyellow;
+  font-size: 0.4rem;
+}
 .about__page .about__long-description {
   flex-direction: column;
 }
@@ -455,7 +459,7 @@ footer .footer__two ul li:not(:last-child) {
 .about__page small.is-inview {
   padding-top: 100px;
 }
-.about__page blockquote {
+.about__page .my-philosophy blockquote {
   font-size: calc(100vw / 920 * 49);
   text-align: center;
   max-width: 900px;
