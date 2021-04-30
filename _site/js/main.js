@@ -13,8 +13,6 @@ const clamp = (num, min, max) => num <= min ? min : num >= max ? max : num; // C
 const map = (x, a, b, c, d) => clamp((x - a) * (d - c) / (b - a) + c, Math.min(c,d), Math.max(c,d)); // Map number x from range [a, b] to [c, d]
 
 
-
-
 window.addEventListener('load', function(){
     lscroll.update();
     // console.log("updated");
