@@ -10,9 +10,56 @@ body {
     @include media(">tablet"){
         font-size: calc(100vw / 768 * 10);
     }
+    &:before {
+        animation: grain 8s steps(10) infinite;
+        background-image: url("https://s.cdpn.io/9632/paper-pattern.png");
+        content: "";
+        height: 300%;
+        left: -50%;
+        opacity: 0.06;
+        position: fixed;
+        top: -100%;
+        width: 300%;
+    }
+    
+    
+    
 
 }
 
+@keyframes grain {
+    0%,
+    100% {
+      transform: translate(0, 0);
+    }
+    10% {
+      transform: translate(-5%, -10%);
+    }
+    20% {
+      transform: translate(-15%, 5%);
+    }
+    30% {
+      transform: translate(7%, -25%);
+    }
+    40% {
+      transform: translate(-5%, 25%);
+    }
+    50% {
+      transform: translate(-15%, 10%);
+    }
+    60% {
+      transform: translate(15%, 0%);
+    }
+    70% {
+      transform: translate(0%, 15%);
+    }
+    80% {
+      transform: translate(3%, 35%);
+    }
+    90% {
+      transform: translate(-10%, 10%);
+    }
+}
 h1,
 h2,
 h3 {
@@ -35,7 +82,6 @@ a{
     z-index: -10;
 }
 
-
 .container{
     padding-top: 150px;
 }
@@ -51,9 +97,15 @@ a{
 .visually-hidden{
     visibility: hidden;
 }
+
 .display-none{
     display: none;
 }
+
 .uppercase{
     text-transform: uppercase;
+}
+
+.overflow-h{
+  overflow: hidden;
 }
