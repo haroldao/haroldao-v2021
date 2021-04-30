@@ -14,15 +14,25 @@ const clamp = (num, min, max) => num <= min ? min : num >= max ? max : num; // C
 const map = (x, a, b, c, d) => clamp((x - a) * (d - c) / (b - a) + c, Math.min(c,d), Math.max(c,d)); // Map number x from range [a, b] to [c, d]
 
 
+
+
 window.addEventListener('load', function(){
     lscroll.update();
-    console.log("object");
+    // console.log("updated");
+
+    // @see https://github.com/moment/luxon
+    setInterval(() => {
+        const time = document.querySelector(".locale__time output");
+        const timezone = time.getAttribute("data-timezone");
+        const nowTime = luxon.DateTime.now().setZone(timezone);
+        time.innerHTML = nowTime.toFormat("HH:mm:ss");
+    }, 1000);
 
     let scroll = {cache: 0, current: 0};
 
     // Locomotive Scroll event
     lscroll.on('scroll', obj => {
-        console.log("scrolled");
+        // console.log("scrolled");
         scroll.current = obj.scroll.y;
         const distance = scroll.current - scroll.cache;
         scroll.cache = scroll.current;
