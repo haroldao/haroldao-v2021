@@ -41,7 +41,7 @@
             margin-bottom: .4rem;
             font-size: 1.15rem;
         }
-        p{
+        p, output{
             font-size: 1.4rem;
         }
         .location{
@@ -75,6 +75,34 @@
             }
         }
     }
+    .about__education{
+        min-height: 60vh;
+        .education__logos{
+            display: flex;
+            flex-wrap: wrap;
+            width: 50%;
+            justify-content: space-between;
+            gap: 40px;
+          
+            li{
+                margin-right: 85px;
+                flex: auto;
+                align-self: flex-start;
+                svg{
+                    width: 8rem;
+                    display: block;
+                    position: relative;
+                }
+                figcaption{
+                    // display: none;
+                    opacity: .5;
+                    margin-top: 10px;
+                }
+            }
+        
+        }
+
+    }
     .about__long-description{
         flex-direction: column;
         p{
@@ -85,6 +113,32 @@
             flex-direction: unset;
             p{
                 width: 50% !important;
+            }
+        }
+        .image__wrapper{
+            --time: 1.2s;
+            width: 100%;
+            overflow: hidden;
+            transition: all var(--time) ease-in-out;
+            @include media(">desktop"){
+                width: 50%;
+                // img{
+                //     border-radius: $border-radius;
+                // }
+            }
+            &:hover{
+                transform: scale(0.9);
+            
+                & img{
+                        transform: scale(1.5);
+                }
+    
+
+            }
+            img{
+                transition: all var(--time) ease-in-out;
+                width: 100%;
+                
             }
         }
     }

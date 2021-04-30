@@ -46,7 +46,7 @@ body {
   line-height: 1;
 }
 
-ol, ul {
+ol, ul, li {
   list-style: none;
 }
 
@@ -400,7 +400,7 @@ footer .footer__two ul li:not(:last-child) {
   margin-bottom: 0.4rem;
   font-size: 1.15rem;
 }
-.about__page .location__time p {
+.about__page .location__time p, .about__page .location__time output {
   font-size: 1.4rem;
 }
 .about__page .location__time .location {
@@ -427,6 +427,30 @@ footer .footer__two ul li:not(:last-child) {
   color: greenyellow;
   font-size: 0.4rem;
 }
+.about__page .about__education {
+  min-height: 60vh;
+}
+.about__page .about__education .education__logos {
+  display: flex;
+  flex-wrap: wrap;
+  width: 50%;
+  justify-content: space-between;
+  gap: 40px;
+}
+.about__page .about__education .education__logos li {
+  margin-right: 85px;
+  flex: auto;
+  align-self: flex-start;
+}
+.about__page .about__education .education__logos li svg {
+  width: 8rem;
+  display: block;
+  position: relative;
+}
+.about__page .about__education .education__logos li figcaption {
+  opacity: 0.5;
+  margin-top: 10px;
+}
 .about__page .about__long-description {
   flex-direction: column;
 }
@@ -441,6 +465,27 @@ footer .footer__two ul li:not(:last-child) {
   .about__page .about__long-description p {
     width: 50% !important;
   }
+}
+.about__page .about__long-description .image__wrapper {
+  --time: 1.2s;
+  width: 100%;
+  overflow: hidden;
+  transition: all var(--time) ease-in-out;
+}
+@media (min-width: 901px) {
+  .about__page .about__long-description .image__wrapper {
+    width: 50%;
+  }
+}
+.about__page .about__long-description .image__wrapper:hover {
+  transform: scale(0.9);
+}
+.about__page .about__long-description .image__wrapper:hover img {
+  transform: scale(1.5);
+}
+.about__page .about__long-description .image__wrapper img {
+  transition: all var(--time) ease-in-out;
+  width: 100%;
 }
 .about__page .section-50 {
   height: auto;

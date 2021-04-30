@@ -11,7 +11,7 @@ bodyClass: "about__page"
         <img loading="lazy" src="https://ucarecdn.com/68a251d4-fdd8-46c3-8af6-747039219301/-/format/webp/" alt="Harold AO portrait">
     </section>
     <section class="little__intro">
-        <h2>Hi. I am Harold AO. I'm a young 17 years-old developer and designer.</h2>
+        <h2>Hi. I am Harold AO. I'm a young 17 year-old developer and designer.</h2>
     </section>
     <hr>
     <section class="location__time">
@@ -21,7 +21,8 @@ bodyClass: "about__page"
         </div>
         <div class="locale__time">
             <span class="label">Time</span>
-            <output data-timezone="Europe/Paris">12:12AM</output>
+            {%- comment -%}@see tz database time zones{%- endcomment -%}
+            <output data-timezone="Europe/Paris"></output>
         </div>
     </section>
     <section class="presentation">
@@ -37,7 +38,44 @@ bodyClass: "about__page"
     <section data-scroll-repeat="true" data-scroll id="sticky-2" class="about__education section-50 uppercase">
         <small data-scroll data-scroll-sticky data-scroll-target="#sticky-2" data-scroll-repeat="true">Education</small>
         <!-- Images/Logos here -->
-        <p>Images go there</p>
+        <ul class="education__logos">
+            <li class="superhi">
+                <figure>
+                    {% include icon-superhi %}
+                    <figcaption>Superhi</figcaption>
+                </figure>
+            </li>
+            <li class="freecodecamp">
+                <figure>
+                    {% include icon-freecodecamp %}
+                    <figcaption>Freecodecamp</figcaption>
+                </figure>
+            </li>
+            <li class="scrimba">
+                <figure>
+                    {% include icon-scrimba %}
+                    <figcaption>Scrimba</figcaption>
+                </figure>
+            </li>
+            <li class="awwwards-academy">
+                <figure>
+                    {% include icon-awwwards-academy %}
+                    <figcaption>Awwwards Academy</figcaption>
+                </figure>
+            </li>
+            <li class="google-digital-garage">
+                <figure>
+                    {% include icon-google-digital-garage %}
+                    <figcaption>Google Digital Garage</figcaption>
+                </figure>
+            </li>
+            <li class="youtube">
+                <figure>
+                    {% include icon-youtube %}
+                    <figcaption>Youtube Videos</figcaption>
+                </figure>
+            </li>
+        </ul>
     </section>
     <section data-scroll-repeat="true" data-scroll id="sticky3" class="about__languages section-50 uppercase">
         <small data-scroll data-scroll-sticky data-scroll-target="#sticky3" data-scroll-repeat="true">Programming Languages</small>
@@ -68,6 +106,7 @@ bodyClass: "about__page"
         It is with motivation and ambition that I wish to develop my skills from day to day because I want to continue to
         learn and create beautiful things...
         <br>
+        <br>
         My creative fields:
         <br>
         + Web / Digital Design
@@ -82,10 +121,12 @@ bodyClass: "about__page"
         <br>
         + Packaging Design
         </p>
-        <div>Image goes there</div>
+        <div class="image__wrapper">
+            <img src="https://ucarecdn.com/04464664-bd9f-44a1-b6f5-4070140248c7/-/format/webp/" alt="Computer on a desk">
+        </div>
     </section>
 
-    <section class="my-philosophy">
+    <section class="my-philosophy" data-scroll data-scroll-speed="2">
         <blockquote class="canela">
             To create compelling websites, products, and experiences, I use my critical thinking skills and keen eye for details.
         </blockquote>
