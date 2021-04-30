@@ -1,3 +1,8 @@
+.about__page .section-50, .about__page .presentation, .about__page .location__time, .about__page hr, .about__page .little__intro {
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
 *, *::before, *::after {
   margin: 0;
   padding: 0;
@@ -114,13 +119,19 @@ select {
   font-display: swap;
 }
 body {
-  background-color: black;
-  color: white;
+  background-color: #000;
+  color: #fff;
   font-family: "SuisseIntl-Regular";
   font-weight: normal;
   transition: all 1.6s cubic-bezier(0.25, 0.46, 0.45, 0.94);
   overflow: hidden;
   width: 100%;
+  font-size: calc(100vw / 320 * 10);
+}
+@media (min-width: 769px) {
+  body {
+    font-size: calc(100vw / 768 * 10);
+  }
 }
 
 h1,
@@ -159,6 +170,10 @@ a:hover {
 
 .visually-hidden {
   visibility: hidden;
+}
+
+.uppercase {
+  text-transform: uppercase;
 }
 
 /*! locomotive-scroll v4.1.1 | MIT License | https://github.com/locomotivemtl/locomotive-scroll */
@@ -341,17 +356,98 @@ footer .footer__two ul li:not(:last-child) {
   transform: translateY(0);
 }
 
+.about__page {
+  line-height: 1.2;
+}
 .about__page .about__introduction h1 {
   text-align: center;
+  font-size: 9vw;
+  max-width: 700px;
+  margin: 0 auto;
+  position: relative;
 }
 .about__page .about__introduction img {
   width: 100vw;
 }
-.about__page h2 {
-  font-family: "SuisseIntl-Regular";
+@media (min-width: 901px) {
+  .about__page .about__introduction img {
+    margin-top: -100px;
+    padding: 0 10px;
+    border-radius: 30px;
+  }
 }
-.about__page p {
-  font-size: calc( 100vw / 375 * 15 );
+.about__page .little__intro {
+  max-width: 1130px;
+  margin-top: 4rem;
+  margin-bottom: 6rem;
+}
+.about__page .little__intro h2 {
+  font-family: "SuisseIntl-Regular";
+  font-size: 7vw;
+  text-transform: uppercase;
+}
+.about__page .location__time {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 200px;
+}
+.about__page .location__time .label {
+  margin-bottom: 0.4rem;
+  font-size: 1.15rem;
+}
+.about__page .location__time p {
+  font-size: 1.4rem;
+}
+.about__page .location__time .location {
+  display: flex;
+  flex-direction: column;
+}
+.about__page .location__time .locale__time {
+  display: flex;
+  flex-direction: column;
+  text-align: end;
+}
+.about__page .presentation {
+  font-size: 2rem;
+  text-transform: uppercase;
+}
+.about__page .about__languages ul {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  height: 100px;
+  flex-wrap: wrap;
+}
+.about__page .about__long-description {
+  flex-direction: column;
+}
+.about__page .about__long-description p {
+  font-size: 2rem;
+  width: auto !important;
+}
+@media (min-width: 901px) {
+  .about__page .about__long-description {
+    flex-direction: unset;
+  }
+  .about__page .about__long-description p {
+    width: 50% !important;
+  }
+}
+.about__page .section-50 {
+  height: auto;
+  margin-top: 80px;
+  margin-top: 80px;
+  margin-bottom: 80px;
+  display: flex;
+  justify-content: space-between;
+}
+.about__page .section-50 small {
+  align-self: flex-start;
+  width: 50%;
+}
+.about__page .section-50 p {
+  width: 50%;
 }
 .about__page small {
   transition: all 0.1s ease;
@@ -364,13 +460,6 @@ footer .footer__two ul li:not(:last-child) {
   text-align: center;
   max-width: 900px;
   margin: 100px auto;
-}
-
-@media screen and (min-width: 900px) {
-  .about__page p {
-    line-height: 1.2;
-    font-size: calc( 100vw / 900 * 15 );
-  }
 }
 
 /*# sourceMappingURL=main.css.map */
