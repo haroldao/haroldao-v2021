@@ -7,6 +7,7 @@ bodyClass: "about__page"
 <div class="about__page">
     <section class="about__introduction" data-scroll>
         <h1 data-splitting >ABOUT ME</h1>
+        <h1 class="display-none">ABOUT ME</h1>
         <img loading="lazy" src="https://ucarecdn.com/68a251d4-fdd8-46c3-8af6-747039219301/-/format/webp/" alt="Harold AO portrait">
     </section>
     <section class="little__intro">
@@ -20,7 +21,7 @@ bodyClass: "about__page"
         </div>
         <div class="locale__time">
             <span class="label">Time</span>
-            <p>12:12AM</p>
+            <output data-timezone="Europe/Paris">12:12AM</output>
         </div>
     </section>
     <section class="presentation">
@@ -33,25 +34,25 @@ bodyClass: "about__page"
         Through this, I have learned self-taught web development, UI design, graphic design, and some video animation (motion design).</p>
     </section>
 
-    <section class="about__education section-50 uppercase">
-        <small>Education</small>
+    <section data-scroll-repeat="true" data-scroll id="sticky-2" class="about__education section-50 uppercase">
+        <small data-scroll data-scroll-sticky data-scroll-target="#sticky-2" data-scroll-repeat="true">Education</small>
         <!-- Images/Logos here -->
         <p>Images go there</p>
     </section>
-    <section class="about__languages section-50 uppercase">
-        <small>Programming Languages</small>
+    <section data-scroll-repeat="true" data-scroll id="sticky3" class="about__languages section-50 uppercase">
+        <small data-scroll data-scroll-sticky data-scroll-target="#sticky3" data-scroll-repeat="true">Programming Languages</small>
         <ul>
-            <li>-HTML/CSS</li>
-            <li>-Javascript</li>
-            <li>-ReactJS</li>
-            <li>-GatsbyJS</li>
-            <li>-Python</li>
-            <li>-Sqlite</li>
-            <li>-Scss</li>
-            <li>-NodeJS</li>
-            <li>-Liquid</li>
+            <li>- HTML/CSS</li>
+            <li>- Javascript</li>
+            <li>- ReactJS</li>
+            <li>- GatsbyJS</li>
+            <li>- Python</li>
+            <li>- Sqlite</li>
+            <li>- Scss</li>
+            <li>- NodeJS</li>
+            <li>- Liquid</li>
             <li>
-                -Pug
+                - Pug
                 <span class="accent">(In progress)</span>
             </li>
         </ul>

@@ -172,6 +172,10 @@ a:hover {
   visibility: hidden;
 }
 
+.display-none {
+  display: none;
+}
+
 .uppercase {
   text-transform: uppercase;
 }
