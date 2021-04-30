@@ -1,5 +1,4 @@
-// import LocomotiveScroll from 'locomotive-scroll';
-// import splitting from "../../node_modules/splitting/dist/splitting-lite";
+console.log("%cThis site was designed and developed by Harold AO in April of 2021. It utilizes Eleventy, Liquid, vanilla javascript, Locomotive Scroll and Splitting.", "color:yellow");
 
 const lscroll = new LocomotiveScroll({
     el: document.querySelector('[data-scroll-container]'),

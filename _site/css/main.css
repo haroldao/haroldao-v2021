@@ -427,6 +427,10 @@ footer .footer__two ul li:not(:last-child) {
   color: greenyellow;
   font-size: 0.4rem;
 }
+.about__page .about__tools li .accent {
+  color: greenyellow;
+  font-size: 0.4rem;
+}
 .about__page .about__education {
   min-height: 60vh;
 }
@@ -443,9 +447,10 @@ footer .footer__two ul li:not(:last-child) {
   align-self: flex-start;
 }
 .about__page .about__education .education__logos li svg {
-  width: 8rem;
+  width: auto;
   display: block;
   position: relative;
+  height: 2rem;
 }
 .about__page .about__education .education__logos li figcaption {
   opacity: 0.5;
@@ -500,6 +505,9 @@ footer .footer__two ul li:not(:last-child) {
   width: 50%;
 }
 .about__page .section-50 p {
+  width: 50%;
+}
+.about__page .section-50 ul {
   width: 50%;
 }
 .about__page small {
