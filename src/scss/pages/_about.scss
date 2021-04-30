@@ -75,6 +75,14 @@
             }
         }
     }
+    .about__tools{
+        li{
+            .accent{
+                color: greenyellow;
+                font-size: .4rem;
+            }
+        }
+    }
     .about__education{
         min-height: 60vh;
         .education__logos{
@@ -89,9 +97,10 @@
                 flex: auto;
                 align-self: flex-start;
                 svg{
-                    width: 8rem;
+                    width: auto;
                     display: block;
                     position: relative;
+                    height: 2rem;
                 }
                 figcaption{
                     // display: none;
@@ -155,6 +164,9 @@
             width: 50%;
         }
         p{
+            width: 50%;
+        }
+        ul{
             width: 50%;
         }
     }
