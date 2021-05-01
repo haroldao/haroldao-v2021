@@ -8,7 +8,7 @@ const lscroll = new LocomotiveScroll({
     }
 });
 
-window.addEventListener('load', function(){
+window.addEventListener('load', () =>{
     console.log("%cThis site was designed and developed by Harold AO in April of 2021. It utilizes Eleventy, Liquid, vanilla javascript, Locomotive Scroll and Splitting.", "color:yellow");
 
     const clamp = (num, min, max) => num <= min ? min : num >= max ? max : num; // Clamps a value between an upper and lower bound
@@ -47,3 +47,9 @@ window.addEventListener('load', function(){
         }
     });
 });
+
+window.addEventListener("resize", ()=> {
+    setTimeout(() => {
+        lscroll.update();   
+    }, 3000);
+})
