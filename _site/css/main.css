@@ -1,5 +1,5 @@
 @charset "UTF-8";
-.uses__page, .about__page .my-philosophy, .about__page .section-50, .about__page .presentation, .about__page .location__time, .about__page hr, .about__page .little__intro {
+.uses__page, .about__page .my-philosophy, .about__page .section-50, .about__page .presentation, .about__page .location__time, .about__page hr, .about__page .little__intro, .index__page .navigation__section, .index__page .index__left-text, .index__page .index__right-text, .index__page .index__hero {
   margin-right: 10px;
   margin-left: 10px;
 }
@@ -406,6 +406,72 @@ footer .footer__two ul li:not(:last-child) {
 }
 .index section.is-inview .anim, footer.is-inview .anim {
   transform: translateY(0);
+}
+
+.index__page .index__hero {
+  position: relative;
+  width: 100%;
+  height: calc(100vh - 3rem);
+}
+.index__page .index__hero .hero-text {
+  margin-top: 3rem;
+}
+.index__page .index__hero .hero-text h1 {
+  font-size: 7rem;
+  max-width: 1050px;
+  text-transform: uppercase;
+}
+.index__page .index__hero .image-side .image__wrapper {
+  border-radius: 30px;
+  overflow: hidden;
+  transform: rotate(6.46deg);
+  width: 24.2rem;
+  height: 31.05rem;
+  margin: auto;
+  position: absolute;
+  top: -5rem;
+  right: 9rem;
+  mix-blend-mode: difference;
+}
+.index__page .index__hero .image-side .image__wrapper img {
+  object-fit: cover;
+  height: 100%;
+}
+.index__page .index__right-text {
+  margin-top: 150px;
+  margin-left: 50%;
+  margin-bottom: 150px;
+}
+.index__page .index__big-image {
+  margin: 150px 0;
+  width: 100%;
+  height: 700px;
+  position: relative;
+}
+.index__page .index__left-text {
+  margin-top: 150px;
+  margin-right: 50%;
+  margin-bottom: 150px;
+}
+.index__page .navigation__section small {
+  text-transform: uppercase;
+}
+.index__page .navigation__section nav ul .link {
+  text-transform: uppercase;
+  font-size: 12vw;
+  font-family: "MonumentExtended-Regular";
+}
+.index__page .navigation__section nav ul .link:not(:last-child) {
+  margin-bottom: 1.015rem;
+}
+.index__page .navigation__section nav ul .link:nth-child(2n) {
+  margin-left: 50%;
+}
+.index__page .navigation__section nav ul .link a {
+  -webkit-text-stroke: white 1px;
+}
+.index__page .navigation__section nav ul .link a:hover {
+  color: transparent;
 }
 
 .about__page {
