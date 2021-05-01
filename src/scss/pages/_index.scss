@@ -32,10 +32,13 @@
         @include media(">1000px"){
             position: relative;
             width: 100%;
-            height: calc(100vh - 20rem);
+            height: calc(100vh - 15rem);
             .hero-text{
                 // width: 50%;
                 margin-top: 3rem;
+                top: 50%;
+                position: absolute;
+                transform: translateY(-50%);
                 h1{
                     font-size: 7rem;
                     max-width: 1050px;
@@ -52,14 +55,16 @@
                     height: 31.05rem;
                     margin: auto;
                     position: absolute;
-                    top: -5rem;
-                    right: 9rem;
+                    top: 50%;
+                    right: 4rem;
                     mix-blend-mode: difference;
-                    img{
-                        object-fit: cover;
-                        height: 100%;
-                    }
+                    transform: translateY(-50%) rotate(6.46deg);
                 }
+                img{
+                    object-fit: cover;
+                    height: 100%;
+                }
+                
             }
         }
     }

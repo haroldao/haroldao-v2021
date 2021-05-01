@@ -426,10 +426,13 @@ footer .footer__two ul li:not(:last-child) {
   .index__page .index__hero {
     position: relative;
     width: 100%;
-    height: calc(100vh - 20rem);
+    height: calc(100vh - 15rem);
   }
   .index__page .index__hero .hero-text {
     margin-top: 3rem;
+    top: 50%;
+    position: absolute;
+    transform: translateY(-50%);
   }
   .index__page .index__hero .hero-text h1 {
     font-size: 7rem;
@@ -444,11 +447,12 @@ footer .footer__two ul li:not(:last-child) {
     height: 31.05rem;
     margin: auto;
     position: absolute;
-    top: -5rem;
-    right: 9rem;
+    top: 50%;
+    right: 4rem;
     mix-blend-mode: difference;
+    transform: translateY(-50%) rotate(6.46deg);
   }
-  .index__page .index__hero .image-side .image__wrapper img {
+  .index__page .index__hero .image-side img {
     object-fit: cover;
     height: 100%;
   }
