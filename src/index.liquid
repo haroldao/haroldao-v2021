@@ -6,32 +6,34 @@ bodyClass: "index"
 ---
 
 <div class="index__page">
-    <section data-scroll>
-        <div class="">
+    <section data-scroll class="index__hero">
+        <div class="hero-text">
             <h1>web developer + designer</h1>
             <p>I have 4+ years experience in design and 3+ years in web development</p>  
         </div>
-        <div>
-            <img loading="lazy" src="https://ucarecdn.com/7e98e68f-b5b1-49fd-a2a6-fb14febf8689/-/format/webp/" alt="Harold AO">
+        <div class="image-side">
+            <div class="image__wrapper">
+                <img loading="lazy" src="https://ucarecdn.com/7e98e68f-b5b1-49fd-a2a6-fb14febf8689/-/format/webp/" alt="Harold AO">
+            </div>
         </div>
     </section>
 
-    <section data-scroll>
+    <section data-scroll class="index__right-text">
         <h2>IT’S WITH MOTIVATION AND AMBITION</h2>
         <p>Aliqua reprehenderit Lorem quis ad nostrud exercitation excepteur et eiusmod id cupidatat magna tempor nostrud. Commodo dolor do minim nostrud esse voluptate qui proident elit adipisicing. Ex ipsum sint pariatur consectetur amet et enim ex.</p>
     </section>
 
 
-    <section data-scroll style="width: 100%; height: 700px; position: relative;">
+    <section class="index__big-image" data-scroll>
         <img loading="lazy" src="https://ucarecdn.com/ba2d82e4-2fa4-497c-9665-ee1fb7112484/-/format/webp/" alt="Harold AO in a library" style="position: absolute;top: 0;left: 0;width: 100%;object-fit: cover;height: 100%;">
     </section>
 
-    <section data-scroll>
+    <section data-scroll class="index__left-text">
         <h2>IT’S WITH MOTIVATION AND AMBITION</h2>
         <p>Aliqua reprehenderit Lorem quis ad nostrud exercitation excepteur et eiusmod id cupidatat magna tempor nostrud. Commodo dolor do minim nostrud esse voluptate qui proident elit adipisicing. Ex ipsum sint pariatur consectetur amet et enim ex.</p>
     </section>
 
-    <section data-scroll>
+    <section data-scroll class="navigation__section">
         <small>useful pages ↗</small>
         {% include nav %}
     </section>
