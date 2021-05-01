@@ -408,36 +408,53 @@ footer .footer__two ul li:not(:last-child) {
   transform: translateY(0);
 }
 
+.index__page section h1 {
+  margin-bottom: 1.115rem;
+}
+.index__page section h2 {
+  margin-bottom: 1.015rem;
+}
 .index__page .index__hero {
-  position: relative;
-  width: 100%;
-  height: calc(100vh - 3rem);
-}
-.index__page .index__hero .hero-text {
-  margin-top: 3rem;
-}
-.index__page .index__hero .hero-text h1 {
-  font-size: 7rem;
-  max-width: 1050px;
+  font-size: 7vw;
   text-transform: uppercase;
 }
-.index__page .index__hero .image-side .image__wrapper {
-  border-radius: 30px;
-  overflow: hidden;
-  transform: rotate(6.46deg);
-  width: 24.2rem;
-  height: 31.05rem;
-  margin: auto;
-  position: absolute;
-  top: -5rem;
-  right: 9rem;
-  mix-blend-mode: difference;
+.index__page .index__hero p {
+  font-size: 1.3rem;
+  max-width: 680px;
 }
-.index__page .index__hero .image-side .image__wrapper img {
-  object-fit: cover;
-  height: 100%;
+@media (min-width: 1001px) {
+  .index__page .index__hero {
+    position: relative;
+    width: 100%;
+    height: calc(100vh - 20rem);
+  }
+  .index__page .index__hero .hero-text {
+    margin-top: 3rem;
+  }
+  .index__page .index__hero .hero-text h1 {
+    font-size: 7rem;
+    max-width: 1050px;
+    text-transform: uppercase;
+  }
+  .index__page .index__hero .image-side .image__wrapper {
+    border-radius: 30px;
+    overflow: hidden;
+    transform: rotate(6.46deg);
+    width: 24.2rem;
+    height: 31.05rem;
+    margin: auto;
+    position: absolute;
+    top: -5rem;
+    right: 9rem;
+    mix-blend-mode: difference;
+  }
+  .index__page .index__hero .image-side .image__wrapper img {
+    object-fit: cover;
+    height: 100%;
+  }
 }
 .index__page .index__right-text {
+  text-transform: uppercase;
   margin-top: 150px;
   margin-left: 50%;
   margin-bottom: 150px;
@@ -449,9 +466,13 @@ footer .footer__two ul li:not(:last-child) {
   position: relative;
 }
 .index__page .index__left-text {
+  text-transform: uppercase;
   margin-top: 150px;
   margin-right: 50%;
   margin-bottom: 150px;
+}
+.index__page .navigation__section {
+  margin-bottom: 100px;
 }
 .index__page .navigation__section small {
   text-transform: uppercase;

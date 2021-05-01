@@ -10,44 +10,61 @@
 }
 
 .index__page{
+    section{
+        h1{
+            margin-bottom: 1.115rem;
+        }
+        h2{
+            margin-bottom: 1.015rem;
+        }
+    }
     .index__hero{
         @extend %container;
         // display: flex;
         // align-items: center;
         // justify-content: space-between;
-        position: relative;
-        width: 100%;
-        height: calc(100vh - 3rem);
-        .hero-text{
-            // width: 50%;
-            margin-top: 3rem;
-            h1{
-                font-size: 7rem;
-                max-width: 1050px;
-                text-transform: uppercase;
-            }
+        font-size: 7vw;
+        text-transform: uppercase;
+        p{
+            font-size: 1.3rem;
+            max-width: 680px;
         }
-        .image-side{
-            // width: 50%;
-            .image__wrapper{
-                border-radius: $border-radius;
-                overflow: hidden;
-                transform: rotate(6.46deg);
-                width: 24.2rem;
-                height: 31.05rem;
-                margin: auto;
-                position: absolute;
-                top: -5rem;
-                right: 9rem;
-                mix-blend-mode: difference;
-                img{
-                    object-fit: cover;
-                    height: 100%;
+        @include media(">1000px"){
+            position: relative;
+            width: 100%;
+            height: calc(100vh - 20rem);
+            .hero-text{
+                // width: 50%;
+                margin-top: 3rem;
+                h1{
+                    font-size: 7rem;
+                    max-width: 1050px;
+                    text-transform: uppercase;
+                }
+            }
+            .image-side{
+                // width: 50%;
+                .image__wrapper{
+                    border-radius: $border-radius;
+                    overflow: hidden;
+                    transform: rotate(6.46deg);
+                    width: 24.2rem;
+                    height: 31.05rem;
+                    margin: auto;
+                    position: absolute;
+                    top: -5rem;
+                    right: 9rem;
+                    mix-blend-mode: difference;
+                    img{
+                        object-fit: cover;
+                        height: 100%;
+                    }
                 }
             }
         }
     }
     .index__right-text{
+        text-transform: uppercase;
         @extend %container;
         margin-top: 150px;
         margin-left: 50%;
@@ -60,12 +77,14 @@
         position: relative;
     }
     .index__left-text{
+        text-transform: uppercase;
         @extend %container;
         margin-top: 150px;
         margin-right: 50%;
         margin-bottom: 150px;
     }
     .navigation__section{
+        margin-bottom: 100px;
         @extend %container;
         small{
             text-transform: uppercase;
