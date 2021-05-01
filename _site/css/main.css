@@ -528,6 +528,7 @@ footer .footer__two ul li:not(:last-child) {
 @media (min-width: 901px) {
   .about__page .about__long-description .image__wrapper {
     width: 50%;
+    border-radius: 30px;
   }
 }
 .about__page .about__long-description .image__wrapper:hover {

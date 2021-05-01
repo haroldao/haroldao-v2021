@@ -91,7 +91,6 @@
             width: 50%;
             justify-content: space-between;
             gap: 40px;
-          
             li{
                 margin-right: 85px;
                 flex: auto;
@@ -110,7 +109,6 @@
             }
         
         }
-
     }
     .about__long-description{
         flex-direction: column;
@@ -131,6 +129,7 @@
             transition: all var(--time) ease-in-out;
             @include media(">desktop"){
                 width: 50%;
+                border-radius: $border-radius;
                 // img{
                 //     border-radius: $border-radius;
                 // }
