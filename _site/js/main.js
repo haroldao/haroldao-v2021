@@ -1,28 +1,26 @@
+const splitting = Splitting();
+
+const lscroll = new LocomotiveScroll({
+    el: document.querySelector('[data-scroll-container]'),
+    smooth: true,
+    smartphone: {
+        smooth: true
+    }
+});
+
 window.addEventListener('load', function(){
     console.log("%cThis site was designed and developed by Harold AO in April of 2021. It utilizes Eleventy, Liquid, vanilla javascript, Locomotive Scroll and Splitting.", "color:yellow");
-    const splitting = Splitting();
-
-    const lscroll = new LocomotiveScroll({
-        el: document.querySelector('[data-scroll-container]'),
-        smooth: true,
-        smartphone: {
-            smooth: true
-        }
-    });
 
     const clamp = (num, min, max) => num <= min ? min : num >= max ? max : num; // Clamps a value between an upper and lower bound
     const map = (x, a, b, c, d) => clamp((x - a) * (d - c) / (b - a) + c, Math.min(c,d), Math.max(c,d)); // Map number x from range [a, b] to [c, d]
-
-    console.log("test");
+    
     lscroll.update();
-    // console.log("updated");
 
     // @see https://github.com/moment/luxon
     setInterval(() => {
         const time = document.querySelector(".locale__time output");
         const timezone = time.getAttribute("data-timezone");
         const nowTime = luxon.DateTime.now().setZone(timezone);
-        console.log("temps");
         time.innerHTML = nowTime.toFormat("HH:mm:ss");
     }, 1000);
 
