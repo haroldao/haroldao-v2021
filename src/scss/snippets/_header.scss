@@ -12,17 +12,21 @@ header{
     z-index: 999999;
     text-transform: uppercase;
     background: linear-gradient(180deg, #000000 0%, rgba(0, 0, 0, 0) 88.96%);
-    li{
-        @include media(">desktop"){
-            text-transform: uppercase;
-            padding: 10px 40px;
-            border: solid 1px;
-            border-radius: 30px;    
-        }
-        display: inline-block;
-        list-style: none;
-        &:not(:last-child){
-            margin-right: 15px;
+    nav{
+        li{
+            display: inline-block;
+            list-style: none;
+            &:not(:last-child){
+                margin-right: 15px;
+            }
+            a{
+                @include media(">desktop"){
+                    text-transform: uppercase;
+                    padding: 10px 40px;
+                    border: solid 1px;
+                    border-radius: 30px;    
+                }      
+            }
         }
     }
     a{
