@@ -352,20 +352,20 @@ header {
   text-transform: uppercase;
   background: linear-gradient(180deg, #000000 0%, rgba(0, 0, 0, 0) 88.96%);
 }
-header li {
+header nav li {
   display: inline-block;
   list-style: none;
 }
+header nav li:not(:last-child) {
+  margin-right: 15px;
+}
 @media (min-width: 901px) {
-  header li {
+  header nav li a {
     text-transform: uppercase;
     padding: 10px 40px;
     border: solid 1px;
     border-radius: 30px;
   }
-}
-header li:not(:last-child) {
-  margin-right: 15px;
 }
 header a {
   text-decoration: none;

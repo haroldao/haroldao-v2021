@@ -137,3 +137,43 @@ collections:
               - label: "url"
                 name: "url"
                 widget: "string"
+  - name: "work"
+    slug: "{{slug}}"
+    label: "Work"
+    folder: "src/work"
+    create: true
+    # preview_path: "work/{{slug}}"
+    fields:
+      # - { label: "Layout", name: "work", widget: "hidden" }
+      - { label: "Meta Title", name: "title", widget: "string" }
+      - { label: "Meta Description", name: "description", widget: "string" }
+      - { label: "Title", name: "workTitle", widget: "string" }
+      - { label: "Description", name: "workDescription", widget: "string" }
+      - { label: "Client Name", name: "clientName", widget: "string" }
+      - { label: "Color", name: "color", widget: "string" }
+      - { label: "Project URL", name: "projectUrl", widget: "string" }
+      - { label: "Dribbble", name: "dribbble", widget: "string" }
+      - { label: "Behance", name: "behance", widget: "string" }
+      - { label: "Year", name: "year", widget: "string" }
+      - {
+          label: "Task",
+          name: "task",
+          widget: "list",
+          default: "Web Development",
+        }
+      - { label: "Sub Heading", name: "subHeading", widget: "string" }
+      - { label: "Publish Date", name: "date", widget: "datetime" }
+      - {
+          label: "Featured Image",
+          name: "featuredImg",
+          widget: "image",
+          required: false,
+        }
+      - { label: "Tags", name: "tags", widget: "list", default: "work" }
+      - { label: "Body", name: "body", widget: "markdown" }
+      - {
+          label: "published",
+          name: "published",
+          widget: "boolean",
+          default: false,
+        }
