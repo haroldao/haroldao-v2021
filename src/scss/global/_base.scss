@@ -109,3 +109,28 @@ a{
 .overflow-h{
   overflow: hidden;
 }
+
+.anim{
+  overflow: hidden;
+}
+.loaded .anim.is-inview{
+  // color: red;
+  h1{
+    animation: try 1s forwards $cubic-bezier-1 0s;
+  }
+}
+
+@keyframes try {
+  from{
+    transform: translateY(100%);
+  }
+  to{
+    transform: translateY(0%);
+  }
+}
+// .index .link{
+//   opacity: 1 !important;
+// }
+.link:not(.active){
+  opacity: .6;
+}
