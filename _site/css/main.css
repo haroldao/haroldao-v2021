@@ -1,5 +1,5 @@
 @charset "UTF-8";
-.uses__page, .about__page .my-philosophy, .about__page .section-50, .about__page .presentation, .about__page .location__time, .about__page hr, .about__page .little__intro, .index__page .navigation__section, .index__page .index__left-text, .index__page .index__right-text, .index__page .index__hero {
+.work__page, .uses__page, .about__page .my-philosophy, .about__page .section-50, .about__page .presentation, .about__page .location__time, .about__page hr, .about__page .little__intro, .index__page .navigation__section, .index__page .index__left-text, .index__page .index__right-text, .index__page .index__hero {
   margin-right: 10px;
   margin-left: 10px;
 }
@@ -226,6 +226,26 @@ a:hover {
 
 .overflow-h {
   overflow: hidden;
+}
+
+.anim {
+  overflow: hidden;
+}
+
+.loaded .anim.is-inview h1 {
+  animation: try 1s forwards cubic-bezier(0.25, 0.46, 0.45, 0.94) 0s;
+}
+
+@keyframes try {
+  from {
+    transform: translateY(100%);
+  }
+  to {
+    transform: translateY(0%);
+  }
+}
+.link:not(.active) {
+  opacity: 0.6;
 }
 
 /*! locomotive-scroll v4.1.1 | MIT License | https://github.com/locomotivemtl/locomotive-scroll */
@@ -709,6 +729,39 @@ footer .footer__two ul li:not(:last-child) {
 .uses__page section .part h3::before {
   content: "⨯ ";
   padding-right: 4px;
+}
+
+.work__page h1 {
+  text-transform: uppercase;
+  font-size: 9vw;
+  text-align: center;
+}
+@media (min-width: 901px) {
+  .work__page section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px 2vw;
+  }
+}
+.work__page section .image__wrapper {
+  position: relative;
+}
+.work__page section .image__wrapper p {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 10px;
+  background: black;
+  padding: 0.7rem 3rem;
+  border-radius: 30px;
+  font-size: 0.75rem;
+}
+.work__page section .image__wrapper .img {
+  padding-top: 56.25%;
+  height: 0;
+  overflow: hidden;
+  background: greenyellow;
+  margin-top: 1.3rem;
 }
 
 /*# sourceMappingURL=main.css.map */
