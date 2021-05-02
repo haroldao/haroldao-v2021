@@ -51,5 +51,5 @@ window.addEventListener('load', () =>{
 window.addEventListener("resize", ()=> {
     setTimeout(() => {
         lscroll.update();   
-    }, 3000);
+    }, 10000);
 })
