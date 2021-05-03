@@ -3,6 +3,7 @@ const fs = require("fs");
 const htmlmin = require("html-minifier");
 const eleventyNavigationPlugin = require("@11ty/eleventy-navigation");
 const pluginRespimg = require( "eleventy-plugin-respimg" );
+const schema = require("@quasibit/eleventy-plugin-schema");
 
 module.exports = function(eleventyConfig) {
   eleventyConfig.setBrowserSyncConfig({
@@ -33,6 +34,7 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.srcsetWidths = [ 320, 640, 960, 1280, 1600, 1920, 2240, 2560 ];
   eleventyConfig.fallbackWidth = 640;
   eleventyConfig.addPlugin( pluginRespimg );
+  eleventyConfig.addPlugin(schema);
 
   // Minify HTML
   eleventyConfig.addTransform("htmlmin", function(content, outputPath) {
@@ -47,6 +49,11 @@ module.exports = function(eleventyConfig) {
     }
     return content;
   });
+
+  eleventyConfig.addFilter('iso8601', (dateObj) => {
+    return DateTime.fromJSDate(dateObj, { zone: 'utc' }).toISO()
+  });
+
   // Copy Static Files to /_Site
   eleventyConfig.addPassthroughCopy({
     "./src/admin/config.yml": "./admin/config.yml",
