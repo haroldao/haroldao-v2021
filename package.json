@@ -17,6 +17,7 @@
   "devDependencies": {
     "@11ty/eleventy": "^0.12.1",
     "@11ty/eleventy-navigation": "^0.1.6",
+    "@quasibit/eleventy-plugin-schema": "^1.0.0",
     "npm-run-all": "^4.1.5"
   },
   "dependencies": {
