@@ -1,5 +1,5 @@
 {
 	"layout": "work",
-	"templateEngineOverride": "liquid,md",
+	"templateEngineOverride": "liquid, md",
 	"tags": ["work"]
 }
