@@ -1,6 +1,14 @@
 .index section, footer{
     opacity: 0;
     transition: all 2s $cubic-bezier-2 .1s;
+    &.is-inview{
+        transition: all 2s $cubic-bezier-2 .4s;
+
+        opacity: 1;
+        .anim{
+            transform: translateY(0);
+        }
+    }
     
     
 }
