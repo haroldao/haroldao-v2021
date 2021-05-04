@@ -444,11 +444,12 @@ footer .footer__two ul li:not(:last-child) {
   opacity: 0;
   transition: all 2s cubic-bezier(0.79, 0.31, 0, 0.93) 0.1s;
 }
-.index section.is-inview, footer.is-inview {
+
+footer .is-inview {
   transition: all 2s cubic-bezier(0.79, 0.31, 0, 0.93) 0.4s;
   opacity: 1;
 }
-.index section.is-inview .anim, footer.is-inview .anim {
+footer .is-inview .anim {
   transform: translateY(0);
 }
 
