@@ -233,7 +233,7 @@ a:hover {
     transform: translateY(0%);
   }
 }
-.link:not(.active) {
+header .link:not(.active) {
   opacity: 0.6;
 }
 
@@ -445,11 +445,11 @@ footer .footer__two ul li:not(:last-child) {
   transition: all 2s cubic-bezier(0.79, 0.31, 0, 0.93) 0.1s;
 }
 
-footer .is-inview {
+footer.is-inview {
   transition: all 2s cubic-bezier(0.79, 0.31, 0, 0.93) 0.4s;
   opacity: 1;
 }
-footer .is-inview .anim {
+footer.is-inview .anim {
   transform: translateY(0);
 }
 
