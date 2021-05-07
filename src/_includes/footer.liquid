@@ -2,7 +2,7 @@
     <div class="footer__one">
         <span class="canela">Say Hello, I won't bite... 🤗</span>
         <div class="contact__mail">
-            <a href="mailto:{{ site.socials.email }}">{{ site.socials.email }}</a>
+            <a title="Click me to send an email" href="mailto:{{ site.socials.email }}">{{ site.socials.email }}</a>
         </div>
     </div>
    {% assign year = "now" | date: "%Y" %}
@@ -18,7 +18,7 @@
         {% if item[0] == 'email' %}
         {% continue %}
         {% endif %}
-            <li>
+            <li title="{{ item[0] }}">
                 <a href="{{ item[1] }}">{{ item[0] }}</a>   
             </li>
         {% endfor %}
