@@ -97,8 +97,8 @@ select {
 
 @font-face {
   font-family: "MonumentExtended-Regular";
-  src: url("/src/fonts/MonumentExtended-Regular.otf");
-  src: url("/src/fonts/MonumentExtended-Regular.eot?#iefix") format("embedded-opentype"), url("/src/fonts/MonumentExtended-Regular.svg#MonumentExtended-Regular") format("svg"), url("/src/fonts/MonumentExtended-Regular.ttf") format("truetype"), url("/src/fonts/MonumentExtended-Regular.woff") format("woff"), url("/src/fonts/MonumentExtended-Regular.woff2") format("woff2");
+  src: url("/src/fonts/MonumentExtended-Regular.woff2") format("woff2");
+  src: url("/src/fonts/MonumentExtended-Regular.woff") format("woff"), url("/src/fonts/MonumentExtended-Regular.otf"), url("/src/fonts/MonumentExtended-Regular.eot?#iefix") format("embedded-opentype"), url("/src/fonts/MonumentExtended-Regular.svg#MonumentExtended-Regular") format("svg"), url("/src/fonts/MonumentExtended-Regular.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
@@ -106,7 +106,7 @@ select {
 @font-face {
   font-family: "SuisseIntl-Regular";
   src: url("/src/fonts/SuisseIntl-Regular.eot");
-  src: url("/src/fonts/SuisseIntl-Regular.eot?#iefix") format("embedded-opentype"), url("/src/fonts/SuisseIntl-Regular.svg#SuisseIntl-Regular") format("svg"), url("/src/fonts/SuisseIntl-Regular.ttf") format("truetype"), url("/src/fonts/SuisseIntl-Regular.woff") format("woff"), url("/src/fonts/SuisseIntl-Regular.woff2") format("woff2");
+  src: url("/src/fonts/SuisseIntl-Regular.woff2") format("woff2"), url("/src/fonts/SuisseIntl-Regular.woff") format("woff"), url("/src/fonts/SuisseIntl-Regular.eot?#iefix") format("embedded-opentype"), url("/src/fonts/SuisseIntl-Regular.svg#SuisseIntl-Regular") format("svg"), url("/src/fonts/SuisseIntl-Regular.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
@@ -388,6 +388,8 @@ header nav li:not(:last-child) {
     padding: 10px 40px;
     border: solid 1px;
     border-radius: 30px;
+    border-radius: 4vw;
+    font-size: 0.8rem;
   }
 }
 header a {
