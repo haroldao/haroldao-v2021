@@ -243,6 +243,8 @@ header .link:not(.active) {
   content: "";
   position: fixed;
   z-index: 100000000;
+  transition: all 0.4s ease;
+  animation: loaderAnimation 0.7s linear alternate forwards 1.5s;
 }
 
 .js .loading::before {
@@ -262,13 +264,11 @@ header .link:not(.active) {
   height: 50px;
   margin: -25px 0 0 -25px;
   opacity: 0.4;
-  animation: loaderAnimation 1.7s linear infinite alternate forwards;
 }
 
 @keyframes loaderAnimation {
   to {
-    opacity: 1;
-    transform: scale3d(0.3, 0.3, 1);
+    transform: translateY(-100vh);
   }
 }
 /*! locomotive-scroll v4.1.1 | MIT License | https://github.com/locomotivemtl/locomotive-scroll */
@@ -456,7 +456,7 @@ footer.is-inview .anim {
 }
 
 .index:not(.loading) .is-inview {
-  transition: all 2s cubic-bezier(0.79, 0.31, 0, 0.93) 0.4s;
+  transition: all 1s cubic-bezier(0.79, 0.31, 0, 0.93) 0.2s;
   opacity: 1;
 }
 .index:not(.loading) .is-inview .anim {

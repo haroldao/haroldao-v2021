@@ -159,6 +159,8 @@ header .link:not(.active) {
   content: '';
   position: fixed;
   z-index: 100000000;
+  transition: all .4s ease;
+  animation: loaderAnimation .7s linear alternate forwards 1.5s;
 }
 
 .js .loading::before {
@@ -178,13 +180,12 @@ header .link:not(.active) {
   height: 50px;
   margin: -25px 0 0 -25px;
   opacity: 0.4;
-  animation: loaderAnimation 1.7s linear infinite alternate forwards;
+  // animation: loaderAnimation 1.7s linear infinite alternate forwards;
 
 }
 
 @keyframes loaderAnimation {
   to {
-    opacity: 1;
-    transform: scale3d(0.3, 0.3, 1);
+    transform: translateY(-100vh);
   }
 }
