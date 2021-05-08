@@ -573,11 +573,11 @@ footer.is-inview .anim {
   margin: 0 auto;
   position: relative;
 }
-.about__page .about__introduction img {
+.about__page .about__introduction .image__wrapper img {
   width: 100vw;
 }
 @media (min-width: 901px) {
-  .about__page .about__introduction img {
+  .about__page .about__introduction .image__wrapper img {
     margin-top: -100px;
     padding: 0 10px;
     border-radius: 30px;
@@ -623,7 +623,7 @@ footer.is-inview .anim {
   width: 50%;
   display: flex;
   flex-direction: column;
-  height: 100px;
+  height: 150px;
   flex-wrap: wrap;
 }
 .about__page .about__languages ul li .accent {

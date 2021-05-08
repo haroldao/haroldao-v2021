@@ -8,12 +8,14 @@
             margin: 0 auto;
             position: relative;
         }
-        img{
-            width: 100vw; // Full width even on wide screens
-            @include media(">desktop"){
-                margin-top: -100px;
-                padding: 0 $container-padding-mobile;
-                border-radius: $border-radius;
+        .image__wrapper{
+            img{
+                width: 100vw; // Full width even on wide screens
+                @include media(">desktop"){
+                    margin-top: -100px;
+                    padding: 0 $container-padding-mobile;
+                    border-radius: $border-radius;
+                }
             }
         }
     }
@@ -65,7 +67,7 @@
             width: 50%;
             display: flex;
             flex-direction: column;
-            height: 100px;
+            height: 150px;
             flex-wrap: wrap;
             li{
                 .accent{
