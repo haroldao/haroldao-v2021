@@ -152,7 +152,11 @@ a {
 header .link:not(.active) {
   opacity: .6;
 }
-
+body:not(.loaded) *,
+body:not(.loaded) *::before,
+body:not(.loaded) *::after {
+  animation-play-state: paused !important;
+}
 /* Page Loader */
 .js .loading::before,
 .js .loading::after {
@@ -181,11 +185,14 @@ header .link:not(.active) {
   margin: -25px 0 0 -25px;
   opacity: 0.4;
   // animation: loaderAnimation 1.7s linear infinite alternate forwards;
-
 }
 
 @keyframes loaderAnimation {
   to {
     transform: translateY(-100vh);
+    -webkit-transform: translateY(-100vh);
+    -ms-transform: translateY(-100vh);
+    -moz-transform: translateY(-100vh);
+    -o-transform: translateY(-100vh);
   }
 }
