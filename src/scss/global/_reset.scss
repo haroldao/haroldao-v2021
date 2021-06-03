@@ -8,6 +8,11 @@
     text-rendering: optimizeLegibility;
 }
 
+::selection{
+    background-color: #DE8B67; /*Change with your custom color*/
+}
+
+  
 html,
 body{
     height: 100%;
