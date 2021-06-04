@@ -1,7 +1,6 @@
 // @see https://www.11ty.io/docs/config/
 const fs = require("fs");
 const htmlmin = require("html-minifier");
-const eleventyNavigationPlugin = require("@11ty/eleventy-navigation");
 const pluginRespimg = require( "eleventy-plugin-respimg" );
 const schema = require("@quasibit/eleventy-plugin-schema");
 
@@ -9,7 +8,6 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.setBrowserSyncConfig({
     callbacks: {
       ready: function(err, bs) {
-
         bs.addMiddleware("*", (req, res) => {
           const content_404 = fs.readFileSync('_site/404.html');
           // Add 404 http status code in request header.
@@ -23,8 +21,8 @@ module.exports = function(eleventyConfig) {
     files: './_site/css/**/*.css'
   });
 
-  eleventyConfig.setTemplateFormats(["liquid"]);
-  eleventyConfig.addPlugin(eleventyNavigationPlugin);
+  eleventyConfig.setTemplateFormats(["liquid", "md"]);
+  // eleventyConfig.addPlugin(eleventyNavigationPlugin);
   eleventyConfig.addWatchTarget("./src/scss/");
   eleventyConfig.addPassthroughCopy("./src/css");
   eleventyConfig.addPassthroughCopy("./src/js");
@@ -35,6 +33,8 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.fallbackWidth = 640;
   eleventyConfig.addPlugin( pluginRespimg );
   eleventyConfig.addPlugin(schema);
+
+  // eleventyConfig.addWatchTarget('work');
 
   // Minify HTML
   eleventyConfig.addTransform("htmlmin", function(content, outputPath) {
@@ -49,6 +49,11 @@ module.exports = function(eleventyConfig) {
     }
     return content;
   });
+
+  // Creates custom collection "work"
+  // eleventyConfig.addCollection("work", function(collection) {
+  //   return collection.getFilteredByGlob(".src/work/*.md");
+  // });
 
   eleventyConfig.addFilter('iso8601', (dateObj) => {
     return DateTime.fromJSDate(dateObj, { zone: 'utc' }).toISO()
@@ -73,7 +78,8 @@ module.exports = function(eleventyConfig) {
       includes: "_includes",
       layouts: "_layouts",
       data: "_data"
-    }
+    },
+    templateFormats: ["liquid", "md"]
   }
 
 };
