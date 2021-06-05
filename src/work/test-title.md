@@ -13,6 +13,7 @@ year: "2024"
 task: test, test2, haha
 subHeading: sub heading here
 date: 2021-06-05
+featureImage: https://res.cloudinary.com/haroldao/image/upload/f_auto,q_auto/v1619465997/sample.jpg
 featuredImg: https://res.cloudinary.com/haroldao/image/upload/f_auto,q_auto/v1619465997/sample.jpg
 video: null
 ---
