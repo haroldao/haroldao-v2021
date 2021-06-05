@@ -25,7 +25,7 @@ module.exports = function(eleventyConfig) {
   // eleventyConfig.addPlugin(eleventyNavigationPlugin);
   eleventyConfig.addWatchTarget("./src/scss/");
   eleventyConfig.addPassthroughCopy("./src/css");
-  eleventyConfig.addPassthroughCopy("./src/js");
+  eleventyConfig.addPassthroughCopy("./src/js/app.js");
 
   // https://github.com/eeeps/eleventy-respimg
   eleventyConfig.cloudinaryCloudName = 'haroldao';
