@@ -1,7 +1,7 @@
 <nav>
     <ul>
         {% for entry in nav.pages %}
-        <li title="{{ entry.name }}" class="link {% if entry.url == page.url %}active{% endif %}">
+        <li title="{{ entry.name }}" class="link {% if page.url contains entry.url %}active{% endif %}">
             <a href="{{ entry.url }}">{{ entry.name }}</a>
         </li>
         {% endfor %}
