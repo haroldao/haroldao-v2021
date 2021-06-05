@@ -1,5 +1,5 @@
 ---
-published: false
+published: true
 title: test title
 description: this is a test title
 workTitle: test title
