@@ -14,9 +14,9 @@ footer{
     }
 }
 
-.index:not(.loading){
+.index.loaded{
     .is-inview{
-        transition: all 1s $cubic-bezier-2 .2s;
+        transition: all 1s $cubic-bezier-2 .7s;
 
         opacity: 1;
         .anim{
@@ -90,6 +90,7 @@ footer{
         }
     }
     .index__right-text{
+        line-height: 1.4;
         text-transform: uppercase;
         @extend %container;
         margin-top: 150px;
@@ -103,6 +104,7 @@ footer{
         position: relative;
     }
     .index__left-text{
+        line-height: 1.4;
         text-transform: uppercase;
         @extend %container;
         margin-top: 150px;
