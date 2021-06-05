@@ -1,0 +1,69 @@
+---
+layout: work.liquid
+---
+<h1 class="work__title">{{ title }}</h1>
+
+{% if featureImage %}
+    <section class="work__feature-image">
+        <img src="{{ featureImage }}" alt="{{ featureImage.alt }}">
+    </section>
+{% endif %}
+
+<section class="work__infos">
+    {% if clientName %}
+        <div class="work__client_name">
+            <span>Client</span>
+            <p>{{ clientName }}</p>
+        </div>
+    {% endif %}
+    
+    {% if year %}
+        <div class="work__year">
+            <span>Year</span>
+            <p>{{ year }}</p>
+        </div>
+    {% endif %}
+    
+    {% if task %}
+        <div class="work__task">
+            <span>Categories</span>
+            <p>{{ task }}</p>
+        </div>
+    {% endif %}
+</section>
+
+{% if workDescription %}
+    <section class="work__description">
+        <article>{{ workDescription }}</article>
+    </section>
+{% endif %}
+
+{% if projectUrl or dribbble or behance %}
+    <div class="work__links">
+        {% if projectUrl %}
+            <a href="{{ projectUrl }}">See live</a>
+        {% endif %}
+
+        {% if dribbble %}
+            <a href="{{ dribbble }}">See on Dribbble</a>
+        {% endif %}
+
+        {% if behance %}
+            <a href="{{ behance }}">See on Behance</a>
+        {% endif %}
+    </div>
+{% endif %}
+
+<div class="content" data-scroll data-scroll-repeat="false">
+    {{ content }}
+</div>
+
+{%- comment -%} CSS {%- endcomment -%}
+{% if color %}
+    <style>
+        body{
+            background-color: {{ color }};
+            --accent-color: {{ color }};
+        }
+    </style>
+{% endif %}
