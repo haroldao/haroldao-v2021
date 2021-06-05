@@ -419,6 +419,13 @@ footer {
   margin: 14vh 10px 40px;
   padding-bottom: 2rem;
 }
+footer.is-inview {
+  transition: all 2s cubic-bezier(0.79, 0.31, 0, 0.93) 0.4s;
+  opacity: 1;
+}
+footer.is-inview .anim {
+  transform: translateY(0);
+}
 footer .footer__one {
   text-align: center;
 }
@@ -459,21 +466,12 @@ footer .footer__two ul li:not(:last-child) {
   margin-right: 15px;
 }
 
-.index section, footer {
+.index section:not(.index__hero), footer {
   opacity: 0;
-  transition: all 2s cubic-bezier(0.79, 0.31, 0, 0.93) 0.1s;
-}
-
-footer.is-inview {
-  transition: all 2s cubic-bezier(0.79, 0.31, 0, 0.93) 0.4s;
-  opacity: 1;
-}
-footer.is-inview .anim {
-  transform: translateY(0);
+  transition: all 1s cubic-bezier(0.79, 0.31, 0, 0.93) 0.7s;
 }
 
 .index.loaded .is-inview {
-  transition: all 1s cubic-bezier(0.79, 0.31, 0, 0.93) 0.7s;
   opacity: 1;
 }
 .index.loaded .is-inview .anim {
@@ -525,7 +523,7 @@ footer.is-inview .anim {
     right: 4rem;
     mix-blend-mode: difference;
     transform: translateY(-50%) rotate(6.46deg);
-    animation: bounce 2s ease alternate 5 6s;
+    animation: bounce 2s ease alternate 5 0s;
     z-index: -21;
   }
   .index__page .index__hero .image-side img {
