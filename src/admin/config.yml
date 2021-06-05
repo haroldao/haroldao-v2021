@@ -11,6 +11,9 @@ backend:
   # name: git-gateway
 local_backend: true
 
+# backend:
+#   name: test-repo
+
 public_folder: /img
 
 logo_url: /logo.png
@@ -159,8 +162,9 @@ collections:
           name: "published",
           widget: "boolean",
           default: false,
+          required: false,
         }
-      - { label: "Layout", name: "work", widget: "hidden" }
+      - { label: "Layout", name: "single-work", widget: "hidden" }
       - { label: "Meta Title", name: "title", widget: "string" }
       - { label: "Meta Description", name: "description", widget: "string" }
       - { label: "Title", name: "workTitle", widget: "string" }
@@ -171,7 +175,7 @@ collections:
           widget: "string",
           required: false,
         }
-      - { label: "Color", name: "color", widget: "string", required: false }
+      - { label: "Color", name: "color", widget: "color", required: false }
       - {
           label: "Project URL",
           name: "projectUrl",
@@ -200,16 +204,17 @@ collections:
           hint: "Add a ',' after each word",
         }
       - { label: "Sub Heading", name: "subHeading", widget: "string" }
-      - label: "Publish Date"
-        name: "date"
-        widget: "datetime"
-        default: ""
-        date_format: "YYYY-MM-DD"
-        format: "L" #e.g https://momentjs.com/docs/#/parsing/string-format/
-        picker_utc: true
+      - {
+          label: "Work Year",
+          name: "date",
+          widget: "datetime",
+          date_format: "YYYY-MM-DD",
+          time_format: "HH:mm",
+          format: "YYYY-MM-DD",
+        }
       - {
           label: "Featured Image",
-          name: "featuredImg",
+          name: "featureImage",
           widget: "image",
           required: false,
         }
@@ -220,3 +225,20 @@ collections:
           hint: "test",
           required: false,
         }
+      - label: "Video"
+        name: "video"
+        widget: "file"
+        required: false
+        media_library:
+          config:
+            multiple: true
+      - label: "Images List"
+        name: "images-list"
+        widget: "list"
+        types:
+          - label: "Image Object"
+            name: "image_object"
+            widget: "object"
+            fields:
+              - { label: "Text", name: "text", widget: "text" }
+              - { label: "Image", name: "image", widget: "image" }
