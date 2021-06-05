@@ -1,7 +1,7 @@
 ---
 layout: default.liquid
-title: "About Harold AO"
-description: about
+title: "About | Harold AO"
+description: Harold AO is a 17-year-old Young Developer and Designer based in France. He learned Design and Web development by himself.
 bodyClass: "about"
 ---
 
@@ -13,10 +13,12 @@ bodyClass: "about"
             <img loading="lazy" src="https://ucarecdn.com/68a251d4-fdd8-46c3-8af6-747039219301/-/format/webp/" alt="Harold AO portrait">
         </div>
     </section>
-    <section class="little__intro">
-        <h2>Hi. I am Harold AO. I'm a young 17 year-old developer and designer.</h2>
+    <section class="little__intro anim-scroll overflow-h" data-scroll>
+        <h2 class="anim-scroll_element">Hi. I am Harold AO. I'm a young 17 year-old developer and designer.</h2>
     </section>
-    <hr>
+    <div class="anim-hr" data-scroll>
+        <hr class="anim-hr_element">
+    </div>
     <section class="location__time">
         <div class="location">
             <span class="label">Location</span>
@@ -28,14 +30,27 @@ bodyClass: "about"
             <output data-timezone="Europe/Paris"></output>
         </div>
     </section>
-    <section class="presentation">
-        <p>I have 4+ years of experience working on side-projects and with clients. ... But my skills don't stop there. I'm constantly looking for learning new things and new experiences in this vast world of creativity. Through this, I have learned self-taught web development, UI design, graphic design, and some video animation (motion design).</p>
+    <section class="presentation anim-text" data-scroll data-scroll-repeat="false">
+        <p class="anim-text_element">I have 4+ years of experience working on side-projects and with clients. ... But my skills don't stop there. I'm constantly looking for learning new things and new experiences in this vast world of creativity. Through this, I have learned self-taught web development, UI design, graphic design, and some video animation (motion design).</p>
     </section>
     <section data-scroll-repeat="true" data-scroll id="sticky" class="about__info section-50 uppercase">
         <small data-scroll data-scroll-sticky data-scroll-target="#sticky" data-scroll-repeat="true">INFO</small>
-        <p data-scroll class=""> I have 4+ years of experience working on side-projects and with clients.
-        ... But my skills don't stop there. I'm constantly looking for learning new things and new experiences in this vast world of creativity.
-        Through this, I have learned self-taught web development, UI design, graphic design, and some video animation (motion design).</p>
+        <p data-scroll class=""> 
+            My creative fields:
+            <br>
+            <br>
+            + Web / Digital Design
+            <br>
+            + Animation / Motion Design
+            <br>
+            + Graphic Design
+            <br>
+            + Brand identity
+            <br>
+            +Video Editing
+            <br>
+            + Packaging Design
+        </p>
     </section>
 
     <section data-scroll-repeat="true" data-scroll id="sticky-2" class="about__education section-50 uppercase">
@@ -80,8 +95,8 @@ bodyClass: "about"
             </li>
         </ul>
     </section>
-    <section data-scroll-repeat="true" data-scroll id="sticky3" class="about__languages section-50 uppercase">
-        <small data-scroll data-scroll-sticky data-scroll-target="#sticky3" data-scroll-repeat="true">Programming Languages & Others</small>
+    <section data-scroll-repeat="true" data-scroll id="sticky-3" class="about__languages section-50 uppercase">
+        <small data-scroll data-scroll-sticky data-scroll-target="#sticky-3" data-scroll-repeat="true">Programming Languages & Others</small>
         <ul>
             <li>- HTML/CSS</li>
             <li>- Javascript</li>
@@ -107,8 +122,8 @@ bodyClass: "about"
             </li>
         </ul>
     </section>
-    <section class="about__tools section-50 uppercase">
-        <small>Tools</small>
+    <section data-scroll-repeat="true" data-scroll id="sticky-4" class="about__tools section-50 uppercase">
+        <small data-scroll data-scroll-sticky data-scroll-target="#sticky-4" data-scroll-repeat="true">Tools</small>
         <!-- Software -->
         <ul>
             <li>- Photoshop</li>
@@ -132,19 +147,7 @@ bodyClass: "about"
         learn and create beautiful things...
         <br>
         <br>
-        My creative fields:
-        <br>
-        + Web / Digital Design
-        <br>
-        + Animation / Motion Design
-        <br>
-        + Graphic Design
-        <br>
-        + Brand identity
-        <br>
-        +Video Editing
-        <br>
-        + Packaging Design
+        
         </p>
         <div class="image__wrapper">
             <img src="https://ucarecdn.com/04464664-bd9f-44a1-b6f5-4070140248c7/-/format/webp/" alt="Computer on a desk">
