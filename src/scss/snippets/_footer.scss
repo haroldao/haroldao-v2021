@@ -2,6 +2,13 @@ footer{
     overflow: hidden;
     margin: 14vh 10px 40px;
     padding-bottom: 2rem;
+    &.is-inview{
+        transition: all 2s $cubic-bezier-2 .4s;
+        opacity: 1;
+        .anim{
+            transform: translateY(0);
+        }
+    }
     .footer__one{
         text-align: center;
         .contact__mail{
