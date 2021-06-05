@@ -11,7 +11,7 @@ header{
     position: fixed;
     z-index: 999999;
     text-transform: uppercase;
-    background: linear-gradient(180deg, #000000 0%, rgba(0, 0, 0, 0) 88.96%);
+    background: linear-gradient(180deg, var(--accent-color) 0%, rgba(0, 0, 0, 0) 88.96%);
     nav{
         li{
             display: inline-block;
