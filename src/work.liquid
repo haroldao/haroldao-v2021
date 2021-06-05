@@ -1,21 +1,38 @@
 ---
-layout: default.liquid
+layout: work.liquid
 bodyClass: "work"
 title: "Work | Harold AO"
 ---
 <div class="work__page">
-    <div data-scroll class="anim">
-        <h1>[SELECTED] Work</h1>
+    <div data-scroll class="anim-scroll overflow-h">
+        <h1 class="anim-scroll_element">[SELECTED] Work</h1>
     </div>
     <section>
-        {% for item in (1..10) %}
-        <div class="work">
-            <div class="image__wrapper">
-                <div class="img"></div><!-- Images here -->
-                <p>Design</p>
-            </div>
-            <h2>Work Title</h2>
-        </div>
+        {% for work in collections.work reversed %}
+            {% if work.data.published %}
+                <div class="work">
+                    <a href="{{work.url}}">
+                        <div class="image__wrapper">
+                            <div class="img">
+                                <img src="{{ work.data.featureImage }}" alt="">
+                            </div>
+                            <div class="tags">
+                                <p>
+                                    {% for tag in work.data.tags %}
+                                    {{ tag.last }}
+                                    {% unless tag == "work" %}
+                                    <span>{{tag }}</span>
+                                    {% endunless %}
+                                    {% endfor %}
+                                </p>
+                            </div>
+                        </div>
+                        <h2>{{ work.data.title }}</h2>
+                        <!-- {{ work.data.tags }}
+                        <p>{{ work.date }}</p> -->
+                    </a>
+                </div>
+            {% endif %}
         {% endfor %}
     </section>
 </div>
