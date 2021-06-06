@@ -26,9 +26,6 @@
     }
     .index__hero{
         @extend %container;
-        // display: flex;
-        // align-items: center;
-        // justify-content: space-between;
         font-size: 7vw;
         text-transform: uppercase;
         p{
