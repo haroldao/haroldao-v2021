@@ -209,6 +209,15 @@ img, video, iframe, figure {
   pointer-events: none;
 }
 
+.c-scrollbar {
+  opacity: 0 !important;
+}
+@media (min-width: 769px) {
+  .c-scrollbar {
+    opacity: 1;
+  }
+}
+
 .background__shape {
   position: fixed;
   top: 0;

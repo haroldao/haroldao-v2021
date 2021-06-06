@@ -86,6 +86,12 @@ a {
 img, video, iframe, figure{
   pointer-events: none; //Avoid right-click save etc..
 }
+.c-scrollbar{
+  opacity: 0 !important;
+  @include media(">tablet"){
+    opacity: 1;
+  }
+}
 
 .background__shape {
   position: fixed;
