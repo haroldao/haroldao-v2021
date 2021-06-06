@@ -9,13 +9,29 @@
             position: relative;
         }
         .image__wrapper{
+            height: 0;
+            position: relative;
+            padding-bottom: 100%;
+            width: 100vw;
+            /* margin-top: -100px; */
+            /* padding: 0 10px; */
+            @include media(">desktop"){
+                width: calc(100vw - 20px);
+                border-radius: 30px;
+                margin-left: 10px;
+                margin-right: 10px;
+            }
+            overflow: hidden;
             img{
-                width: 100vw; // Full width even on wide screens
-                @include media(">desktop"){
-                    margin-top: -100px;
-                    padding: 0 $container-padding-mobile;
-                    border-radius: $border-radius;
-                }
+                width: 100vw;
+                position: absolute;
+                max-width: unset;
+                // width: 100vw; // Full width even on wide screens 
+                // @include media(">desktop"){
+                //     margin-top: -100px;
+                //     // padding: 0 $container-padding-mobile;
+                //     // border-radius: $border-radius;
+                // }
             }
         }
     }

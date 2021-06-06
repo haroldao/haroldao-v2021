@@ -591,15 +591,27 @@ footer .footer__two ul li:not(:last-child) {
   margin: 0 auto;
   position: relative;
 }
-.about__page .about__introduction .image__wrapper img {
+.about__page .about__introduction .image__wrapper {
+  height: 0;
+  position: relative;
+  padding-bottom: 100%;
   width: 100vw;
+  /* margin-top: -100px; */
+  /* padding: 0 10px; */
+  overflow: hidden;
 }
 @media (min-width: 901px) {
-  .about__page .about__introduction .image__wrapper img {
-    margin-top: -100px;
-    padding: 0 10px;
+  .about__page .about__introduction .image__wrapper {
+    width: calc(100vw - 20px);
     border-radius: 30px;
+    margin-left: 10px;
+    margin-right: 10px;
   }
+}
+.about__page .about__introduction .image__wrapper img {
+  width: 100vw;
+  position: absolute;
+  max-width: unset;
 }
 .about__page .little__intro {
   max-width: 1130px;
