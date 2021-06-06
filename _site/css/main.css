@@ -596,6 +596,7 @@ footer .footer__two ul li:not(:last-child) {
   position: relative;
   padding-bottom: 100%;
   width: 100vw;
+  background-color: grey;
   /* margin-top: -100px; */
   /* padding: 0 10px; */
   overflow: hidden;
