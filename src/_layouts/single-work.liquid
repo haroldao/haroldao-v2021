@@ -41,15 +41,15 @@ layout: work.liquid
 {% if projectUrl or dribbble or behance %}
     <div class="work__links">
         {% if projectUrl %}
-            <a href="{{ projectUrl }}">See live</a>
+            <a class="link" href="{{ projectUrl }}">See live</a>
         {% endif %}
 
         {% if dribbble %}
-            <a href="{{ dribbble }}">See on Dribbble</a>
+            <a class="dribbble" href="{{ dribbble }}">See on Dribbble</a>
         {% endif %}
 
         {% if behance %}
-            <a href="{{ behance }}">See on Behance</a>
+            <a class="behance" href="{{ behance }}">See on Behance</a>
         {% endif %}
     </div>
 {% endif %}
