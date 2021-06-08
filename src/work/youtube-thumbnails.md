@@ -1,22 +1,25 @@
 ---
+published: true
 title: Youtube Thumbnails
-description:
-featureImage:
+description: Youtube Thumbnails
+workTitle: Youtube Thumbnails
+workDescription: Youtube Thumbnails
+clientName: Youtubers
+color: null
+projectUrl: null
+dribbble: null
+behance: https://www.behance.net/gallery/82827087/Youtube-Thumbnails
 tags:
   - work
   - Graphic Design
-published: true
-workTitle: Youtube Thumbnails
-workDescription:
-clientName: Youtubers
-color:
-projectUrl:
-dribbble:
-behance: https://www.behance.net/gallery/82827087/Youtube-Thumbnails
 year: "2021"
 task: Youtube Thumbnails, Photoshop
+subHeading: Youtube Thumbnails
+date: 2021-06-08
+featureImage: null
 ---
-
 In the past years, I had the chance to work with some Youtubers and do their Youtube Banner and/or Youtube Thumbnails. You can find some of my best thumbnails below.
 
 ## Selected Youtube Thumbnails
+
+![Tom ASMR - Thumbnail](https://res.cloudinary.com/haroldao/image/upload/f_auto,q_auto/v1623183731/FastASMR_wldejt.webp "Tom ASMR - Fastest ASMR")
