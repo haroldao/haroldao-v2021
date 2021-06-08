@@ -24,6 +24,33 @@
         grid-area: 1 / 10 / 2 / 13;
     }
 }
+.work__links{
+    margin-top: 4rem;
+    margin-bottom: 6rem;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 39px;
+    a{
+        padding: 15px 30px;
+        border-radius: 40px;
+        text-align: center;
+        display: block;
+        width: fit-content;
+        // margin: auto;
+    }
+    .link{
+        background: white;
+        color: black;
+    }
+    .dribbble{
+        background: #ea4c89;
+    }
+    .behance{
+        background: #053eff;
+    }
+}
 .work__description{
     margin: 2rem auto;
     text-align: center;
@@ -46,6 +73,11 @@
         //     color: blue;
         //     transition-delay: 2s;
         // }
+    }
+    p{
+        img{
+            width: 100%;
+        }
     }
 }
 // @for $i from 1 through 10 {
