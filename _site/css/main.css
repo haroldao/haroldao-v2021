@@ -214,7 +214,7 @@ img, video, iframe, figure {
 }
 @media (min-width: 769px) {
   .c-scrollbar {
-    opacity: 1;
+    opacity: 1 !important;
   }
 }
 
@@ -861,6 +861,11 @@ footer .footer__two ul li:not(:last-child) {
   left: 0;
   width: 100%;
   height: 100%;
+  object-fit: cover;
+  object-position: top;
+}
+.work__page section .work h2 {
+  margin-top: 2rem;
 }
 
 .work__title {
@@ -889,6 +894,33 @@ footer .footer__two ul li:not(:last-child) {
   grid-area: 1/10/2/13;
 }
 
+.work__links {
+  margin-top: 4rem;
+  margin-bottom: 6rem;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 39px;
+}
+.work__links a {
+  padding: 15px 30px;
+  border-radius: 40px;
+  text-align: center;
+  display: block;
+  width: fit-content;
+}
+.work__links .link {
+  background: white;
+  color: black;
+}
+.work__links .dribbble {
+  background: #ea4c89;
+}
+.work__links .behance {
+  background: #053eff;
+}
+
 .work__description {
   margin: 2rem auto;
   text-align: center;
@@ -908,6 +940,9 @@ footer .footer__two ul li:not(:last-child) {
 }
 .content.is-inview {
   transform: translateY(0%);
+}
+.content p img {
+  width: 100%;
 }
 
 /*# sourceMappingURL=main.css.map */
