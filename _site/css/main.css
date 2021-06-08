@@ -530,6 +530,7 @@ footer .footer__two ul li:not(:last-child) {
     margin: auto;
     position: absolute;
     top: 50%;
+    background-color: grey;
     right: 4rem;
     mix-blend-mode: difference;
     transform: translateY(-50%) rotate(6.46deg);
