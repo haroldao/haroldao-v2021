@@ -89,7 +89,7 @@ img, video, iframe, figure{
 .c-scrollbar{
   opacity: 0 !important;
   @include media(">tablet"){
-    opacity: 1;
+    opacity: 1 !important;
   }
 }
 
