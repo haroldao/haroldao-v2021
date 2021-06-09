@@ -23,17 +23,16 @@ module.exports = function(eleventyConfig) {
   });
 
   eleventyConfig.setTemplateFormats(["liquid", "md"]);
-  // eleventyConfig.addPlugin(eleventyNavigationPlugin);
   eleventyConfig.addWatchTarget("./src/scss/");
   eleventyConfig.addPassthroughCopy("./src/css");
   eleventyConfig.addPassthroughCopy("_redirects");
   eleventyConfig.addPassthroughCopy("./src/js/app.js");
 
-  // https://github.com/eeeps/eleventy-respimg
+  // @see https://github.com/eeeps/eleventy-respimg
   eleventyConfig.cloudinaryCloudName = 'haroldao';
   eleventyConfig.srcsetWidths = [ 320, 640, 960, 1280, 1600, 1920, 2240, 2560 ];
   eleventyConfig.fallbackWidth = 640;
-  eleventyConfig.addPlugin( pluginRespimg );
+  eleventyConfig.addPlugin(pluginRespimg);
   eleventyConfig.addPlugin(schema);
 
   eleventyConfig.addPlugin(sitemap, {
@@ -41,7 +40,6 @@ module.exports = function(eleventyConfig) {
       hostname: "https://haroldao.com",
     },
   });
-  // eleventyConfig.addWatchTarget('work');
 
   // Minify HTML
   eleventyConfig.addTransform("htmlmin", function(content, outputPath) {
@@ -56,11 +54,6 @@ module.exports = function(eleventyConfig) {
     }
     return content;
   });
-
-  // Creates custom collection "work"
-  // eleventyConfig.addCollection("work", function(collection) {
-  //   return collection.getFilteredByGlob(".src/work/*.md");
-  // });
 
   eleventyConfig.addFilter('iso8601', (dateObj) => {
     return DateTime.fromJSDate(dateObj, { zone: 'utc' }).toISO()
@@ -77,7 +70,7 @@ module.exports = function(eleventyConfig) {
     "node_modules/splitting/dist/splitting.css": "./css/splitting.css",
     "node_modules/splitting/dist/splitting-cells.css": "./css/splitting-cells.css"
   });
-
+  
   return {
     dir:{
       // ⚠️ These values are both relative to your input directory.
@@ -88,5 +81,4 @@ module.exports = function(eleventyConfig) {
     },
     templateFormats: ["liquid", "md"]
   }
-
 };
