@@ -14,7 +14,7 @@ behance: https://www.behance.net/gallery/82827087/Youtube-Thumbnails
 tags:
   - work
   - Graphic Design
-year: "2021"
+year: 2018 - 2020
 task: Youtube Thumbnails, Photoshop
 subHeading: Youtube Thumbnails
 date: 2021-06-08
