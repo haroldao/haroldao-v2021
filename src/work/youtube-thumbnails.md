@@ -1,6 +1,6 @@
 ---
 published: true
-available: false
+available: true
 title: Youtube Thumbnails
 description: Youtube Thumbnails
 workTitle: Youtube Thumbnails
