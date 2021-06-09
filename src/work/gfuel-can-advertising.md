@@ -11,7 +11,7 @@ workTitle: GFuel Can Advertising
 workDescription:
 clientName:
 color: "#21b6c0"
-projectUrl: agag
+projectUrl:
 dribbble:
 behance: https://www.behance.net/gallery/114776471/GFUEL-Energy-Can-Advertising
 year: "2021"
