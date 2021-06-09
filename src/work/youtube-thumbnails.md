@@ -17,7 +17,7 @@ tags:
 year: 2018 - 2020
 task: Youtube Thumbnails, Photoshop
 subHeading: Youtube Thumbnails
-date: 2021-06-08
+date: 2018-08-01
 featureImage: null
 ---
 
