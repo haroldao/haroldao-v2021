@@ -11,7 +11,7 @@ title: "Work | Harold AO"
         {% for work in collections.work reversed %}
             {% if work.data.published %}
                 <div class="work">
-                    <a href="{{work.url}}">
+                    <a {% if work.data.available %}href="{{work.url}}" {% endif %}{% if work.data.available == false %}class="disabled" disabled="disabled"{% endif %}>
                         <div class="image__wrapper">
                             <div class="img">
                                 <img src="{{ work.data.featureImage }}" alt="">
@@ -28,8 +28,6 @@ title: "Work | Harold AO"
                             </div>
                         </div>
                         <h2>{{ work.data.title }}</h2>
-                        <!-- {{ work.data.tags }}
-                        <p>{{ work.date }}</p> -->
                     </a>
                 </div>
             {% endif %}
