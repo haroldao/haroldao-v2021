@@ -3,6 +3,7 @@ const fs = require("fs");
 const htmlmin = require("html-minifier");
 const pluginRespimg = require( "eleventy-plugin-respimg" );
 const schema = require("@quasibit/eleventy-plugin-schema");
+const sitemap = require("@quasibit/eleventy-plugin-sitemap");
 
 module.exports = function(eleventyConfig) {
   eleventyConfig.setBrowserSyncConfig({
@@ -35,6 +36,11 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addPlugin( pluginRespimg );
   eleventyConfig.addPlugin(schema);
 
+  eleventyConfig.addPlugin(sitemap, {
+    sitemap: {
+      hostname: "https://haroldao.com",
+    },
+  });
   // eleventyConfig.addWatchTarget('work');
 
   // Minify HTML
