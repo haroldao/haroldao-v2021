@@ -3,7 +3,9 @@ published: true
 title: Youtube Thumbnails
 description: Youtube Thumbnails
 workTitle: Youtube Thumbnails
-workDescription: Youtube Thumbnails
+workDescription: In the past years, I had the chance to work with some Youtubers
+  and do their Youtube Banner and/or Youtube Thumbnails. You can find some of my
+  best thumbnails below.
 clientName: Youtubers
 color: null
 projectUrl: null
@@ -18,7 +20,6 @@ subHeading: Youtube Thumbnails
 date: 2021-06-08
 featureImage: null
 ---
-In the past years, I had the chance to work with some Youtubers and do their Youtube Banner and/or Youtube Thumbnails. You can find some of my best thumbnails below.
 
 ## Selected Youtube Thumbnails
 
