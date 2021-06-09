@@ -7,6 +7,8 @@ workTitle: SEO Checklist
 workDescription: SEO Checklist
 tags:
   - work
+  - Design
+  - Web Development
 year: "2021"
 task: "UI Design, Web Development "
 subHeading: SEO Checklist
