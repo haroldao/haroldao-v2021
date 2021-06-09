@@ -19,7 +19,7 @@ year: 2018 - 2020
 task: Youtube Thumbnails, Photoshop
 subHeading: Youtube Thumbnails
 date: 2018-08-01
-featureImage: null
+featureImage: https://res.cloudinary.com/haroldao/image/upload/f_auto,q_auto/v1623254217/Youtube_Thumbnails_Cover_ziha93.webp
 ---
 
 ## Selected Youtube Thumbnails
