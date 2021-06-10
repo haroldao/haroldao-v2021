@@ -70,7 +70,7 @@ module.exports = function(eleventyConfig) {
     "node_modules/splitting/dist/splitting.css": "./css/splitting.css",
     "node_modules/splitting/dist/splitting-cells.css": "./css/splitting-cells.css"
   });
-  
+
   return {
     dir:{
       // ⚠️ These values are both relative to your input directory.
