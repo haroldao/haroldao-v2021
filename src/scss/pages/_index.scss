@@ -32,6 +32,11 @@
             font-size: 1.3rem;
             max-width: 680px;
         }
+        .image-side{
+            .image__wrapper{
+                margin-top: 2rem;
+            }
+        }
         @include media(">1000px"){
             position: relative;
             width: 100%;
