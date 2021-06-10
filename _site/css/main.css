@@ -502,6 +502,9 @@ footer .footer__two ul li:not(:last-child) {
   font-size: 1.3rem;
   max-width: 680px;
 }
+.index__page .index__hero .image-side .image__wrapper {
+  margin-top: 2rem;
+}
 @media (min-width: 1001px) {
   .index__page .index__hero {
     position: relative;
@@ -831,6 +834,10 @@ footer .footer__two ul li:not(:last-child) {
 .work__page section .work {
   margin-bottom: 90px;
 }
+.work__page section .work a[disabled=disabled] {
+  cursor: not-allowed;
+  pointer-events: none;
+}
 .work__page section .work .image__wrapper {
   position: relative;
 }
@@ -888,7 +895,7 @@ footer .footer__two ul li:not(:last-child) {
   grid-area: 1/2/2/4;
 }
 .work__infos :nth-child(2) {
-  grid-area: 1/8/2/11;
+  grid-area: 1/8/2/10;
 }
 .work__infos :nth-child(3) {
   grid-area: 1/10/2/13;
@@ -943,6 +950,10 @@ footer .footer__two ul li:not(:last-child) {
 }
 .content p img {
   width: 100%;
+}
+.content video {
+  max-width: 100%;
+  pointer-events: unset !important;
 }
 
 /*# sourceMappingURL=main.css.map */

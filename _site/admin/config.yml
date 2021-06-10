@@ -164,11 +164,24 @@ collections:
           default: false,
           required: false,
         }
+      - {
+          label: "available",
+          name: "available",
+          widget: "boolean",
+          default: true,
+          required: true,
+          hint: "If set to false.. the work will appear on the /work page but will be disabled",
+        }
       - { label: "Layout", name: "single-work", widget: "hidden" }
       - { label: "Meta Title", name: "title", widget: "string" }
       - { label: "Meta Description", name: "description", widget: "string" }
       - { label: "Title", name: "workTitle", widget: "string" }
-      - { label: "Description", name: "workDescription", widget: "string" }
+      - {
+          label: "Description",
+          name: "workDescription",
+          widget: "string",
+          required: false,
+        }
       - {
           label: "Client Name",
           name: "clientName",
