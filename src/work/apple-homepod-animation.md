@@ -4,6 +4,7 @@ available: true
 title: Apple Homepod Animation
 description: Apple Homepod Animation
 workTitle: Apple Homepod
+behance: https://www.behance.net/gallery/114458955/Apple-HomePod-Animation-%28Motion-Design%29
 tags:
   - work
 year: "2020"
