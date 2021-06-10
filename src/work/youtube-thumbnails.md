@@ -8,7 +8,7 @@ workDescription: In the past years, I had the chance to work with some Youtubers
   and do their Youtube Banner and/or Youtube Thumbnails. You can find some of my
   best thumbnails below.
 clientName: Youtubers
-color: null
+color: "#c4302b"
 projectUrl: null
 dribbble: null
 behance: https://www.behance.net/gallery/82827087/Youtube-Thumbnails
