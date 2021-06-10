@@ -7,6 +7,7 @@ workTitle: Apple Homepod
 behance: https://www.behance.net/gallery/114458955/Apple-HomePod-Animation-%28Motion-Design%29
 tags:
   - work
+  - Motion Design
 year: "2020"
 task: After Effects, Motion Design
 subHeading: Apple Homepod Animation
