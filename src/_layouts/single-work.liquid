@@ -56,7 +56,14 @@ layout: work.liquid
 
 <div class="content" data-scroll data-scroll-repeat="false">
     {{ content }}
+    {% if video %}
+        <video muted loop playsinline autoplay >
+            <source src="{{ video }}" type="video/mp4">
+        </video>
+    {% endif %}
 </div>
+
+
 
 {%- comment -%} CSS {%- endcomment -%}
 {% if color %}
