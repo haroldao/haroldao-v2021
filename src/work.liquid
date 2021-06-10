@@ -14,7 +14,11 @@ title: "Work | Harold AO"
                     <a {% if work.data.available %}href="{{work.url}}" {% endif %}{% if work.data.available == false %}class="disabled" disabled="disabled"{% endif %}>
                         <div class="image__wrapper">
                             <div class="img">
-                                <img src="{{ work.data.featureImage }}" alt="">
+                                {% if work.data.available == false %}
+                                    <img src="https://res.cloudinary.com/haroldao/image/upload/f_auto,q_auto/v1623248631/Coming_Soon_kzev2y.webp" alt="">
+                                {% else %}
+                                    <img src="{{ work.data.featureImage }}" alt="{{ work.data.featureImage.alt }}">
+                                {% endif %}
                             </div>
                             <div class="tags">
                                 <p>
