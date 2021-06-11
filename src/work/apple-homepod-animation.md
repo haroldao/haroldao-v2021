@@ -1,6 +1,7 @@
 ---
 published: true
 available: true
+color: "#427ede"
 title: Apple Homepod Animation
 description: Apple Homepod Animation
 workTitle: Apple Homepod
