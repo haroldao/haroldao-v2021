@@ -12,4 +12,5 @@ year: "2020"
 task: Photoshop, Print, Flyer
 subHeading: Inswip Flyer
 date: 2020-08-08
+featureImage: https://res.cloudinary.com/haroldao/image/upload/f_auto,q_auto/v1623372255/Inswip-Mockup-2_kzvk3y.webp
 ---
