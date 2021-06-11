@@ -4,6 +4,7 @@ available: true
 title: Inswip Flyer
 description: Inswip Flyer
 workTitle: Inswip Flyer
+color: "#137efe"
 tags:
   - Graphic Design
   - work
