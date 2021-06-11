@@ -953,6 +953,7 @@ footer .footer__two ul li:not(:last-child) {
 }
 .content video {
   max-width: 100%;
+  width: 100%;
   pointer-events: unset !important;
 }
 
