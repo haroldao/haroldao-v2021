@@ -1,0 +1,55 @@
+
+.lost__wrapper{
+    text-align: center;
+    min-height: 50vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    .marquee{
+        position: relative;
+        overflow: hidden;
+        margin-bottom: 2rem;
+        --offset: 20vw;
+        --move-initial: calc(-25% + var(--offset));
+        --move-final: calc(-50% + var(--offset));
+        .marquee__inner{
+            width: max-content;
+            display: flex;
+            position: relative;
+            transform: translate3d(var(--move-initial), 0, 0);
+            animation: marquee 5s linear infinite forwards;
+            &:hover{
+                animation-play-state: paused;
+            }
+            span, h1{
+                font-family: $monument;
+                font-weight: normal;
+                font-size: 2em;
+                padding: 0 2vw;
+            }
+        }
+    }
+    p{
+        max-width: 400px;
+        a{
+            margin-top: 3rem;
+            display: inline-block;
+            background: white;
+            padding: 15px 25px;
+            border-radius: 30px;
+            color: black;
+        }
+    }
+}
+
+
+@keyframes marquee {
+    0% {
+        transform: translate3d(var(--move-initial), 0, 0);
+    }
+
+    100% {
+        transform: translate3d(var(--move-final), 0, 0);
+    }
+}
