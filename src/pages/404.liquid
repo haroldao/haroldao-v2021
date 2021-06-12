@@ -1,11 +1,21 @@
 ---
 title: OOPS NO SIGNAL - ARE YOU LOST ?
 permalink: 404.html
+bodyClass: 404
 layout: default.liquid
 ---
-
-<h1>{{ title }}</h1>
-<p>Oops, it seems you're getting into a black hole. Or a black hole is getting you.
-    </br>
-    <a href="{{ "/" | url }}">Return to home</a> 
-</p>
+<div class="lost__wrapper">
+    <div class="marquee">
+        <div class="marquee__inner">
+            <h1>{{ title }}</h1>
+            <span>{{ title }}</span>
+            <span>{{ title }}</span>
+            <span>{{ title }}</span>
+            <span>{{ title }}</span>
+        </div>
+    </div>
+    <p>Oops, it seems you're getting into a black hole. Or a black hole is getting you.
+        </br>
+        <a href="{{ "/" | url }}">Return to home</a> 
+    </p>
+</div>
