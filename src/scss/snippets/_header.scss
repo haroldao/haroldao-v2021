@@ -11,8 +11,8 @@ header{
     z-index: 999999;
     text-transform: uppercase;
     background: linear-gradient(180deg, var(--accent-color) 0%, rgba(0, 0, 0, 0) 88.96%);
-    background: -webkit-gradient(linear, left top, left bottom, from(var(--accent-color)), color-stop(88.96%, rgba(0, 0, 0, 0)));
     background: -o-linear-gradient(top, var(--accent-color) 0%, rgba(0, 0, 0, 0) 88.96%);
+    background: -webkit-gradient(linear, left top, left bottom, from(var(--accent-color)), color-stop(88.96%, rgba(0, 0, 0, 0)));
     nav{
         li{
             display: inline-block;
