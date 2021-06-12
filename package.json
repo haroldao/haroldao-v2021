@@ -8,7 +8,7 @@
     "build:sass": "sass src/scss:_site/css",
     "watch:eleventy": "eleventy --serve",
     "build:eleventy": "eleventy",
-    "start": "npm-run-all build:sass --parallel watch:*",
+    "start": "npm-run-all build:sass --parallel watch:* dev:js",
     "build": "npm-run-all build:*",
     "build:js": "rollup -c",
     "dev:js": "rollup -c -w"
