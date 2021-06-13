@@ -35,6 +35,9 @@
         .image-side{
             .image__wrapper{
                 margin-top: 2rem;
+                background: grey;
+                width: 100%;
+                height: 35rem;
             }
         }
         @include media(">1000px"){

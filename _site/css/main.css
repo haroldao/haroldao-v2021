@@ -387,7 +387,6 @@ html.has-scroll-dragging {
 }
 
 header {
-  /* mix-blend-mode: difference; */
   height: 100px;
   padding: 0 10px;
   display: flex;
@@ -400,8 +399,8 @@ header {
   z-index: 999999;
   text-transform: uppercase;
   background: linear-gradient(180deg, var(--accent-color) 0%, rgba(0, 0, 0, 0) 88.96%);
-  background: -webkit-gradient(linear, left top, left bottom, from(var(--accent-color)), color-stop(88.96%, rgba(0, 0, 0, 0)));
   background: -o-linear-gradient(top, var(--accent-color) 0%, rgba(0, 0, 0, 0) 88.96%);
+  background: -webkit-gradient(linear, left top, left bottom, from(var(--accent-color)), color-stop(88.96%, rgba(0, 0, 0, 0)));
 }
 header nav li {
   display: inline-block;
@@ -506,6 +505,9 @@ footer .footer__two ul li:not(:last-child) {
 }
 .index__page .index__hero .image-side .image__wrapper {
   margin-top: 2rem;
+  background: grey;
+  width: 100%;
+  height: 35rem;
 }
 @media (min-width: 1001px) {
   .index__page .index__hero {
@@ -959,6 +961,59 @@ footer .footer__two ul li:not(:last-child) {
   max-width: 100%;
   width: 100%;
   pointer-events: unset !important;
+}
+
+.lost__wrapper {
+  text-align: center;
+  min-height: 50vh;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+.lost__wrapper .marquee {
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 2rem;
+  --offset: 20vw;
+  --move-initial: calc(-25% + var(--offset));
+  --move-final: calc(-50% + var(--offset));
+}
+.lost__wrapper .marquee .marquee__inner {
+  width: max-content;
+  display: flex;
+  position: relative;
+  transform: translate3d(var(--move-initial), 0, 0);
+  animation: marquee 5s linear infinite forwards;
+}
+.lost__wrapper .marquee .marquee__inner:hover {
+  animation-play-state: paused;
+}
+.lost__wrapper .marquee .marquee__inner span, .lost__wrapper .marquee .marquee__inner h1 {
+  font-family: "MonumentExtended-Regular";
+  font-weight: normal;
+  font-size: 2em;
+  padding: 0 2vw;
+}
+.lost__wrapper p {
+  max-width: 400px;
+}
+.lost__wrapper p a {
+  margin-top: 3rem;
+  display: inline-block;
+  background: white;
+  padding: 15px 25px;
+  border-radius: 30px;
+  color: black;
+}
+
+@keyframes marquee {
+  0% {
+    transform: translate3d(var(--move-initial), 0, 0);
+  }
+  100% {
+    transform: translate3d(var(--move-final), 0, 0);
+  }
 }
 
 /*# sourceMappingURL=main.css.map */
