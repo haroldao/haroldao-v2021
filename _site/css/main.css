@@ -507,7 +507,7 @@ footer .footer__two ul li:not(:last-child) {
   margin-top: 2rem;
   background: grey;
   width: 100%;
-  height: 35rem;
+  height: 566px;
 }
 @media (min-width: 1001px) {
   .index__page .index__hero {
