@@ -148,15 +148,27 @@ bodyClass: "about"
     </section>
 
     <section class="about__long-description section-50 uppercase">
-        <p>I was born on 29th december 2003 in Poitiers, in France. 🇫🇷
-        It is with motivation and ambition that I wish to develop my skills from day to day because I want to continue to
-        learn and create beautiful things...
-        <br>
-        <br>
-        
+        {% capture about_more %}
+            I was born on 29th December 2003 in Poitiers, in France. 🇫🇷 .
+            I always knew I wanted to be a developer since the age of 12...
+
+            But in 2014, something special happened. I started making YouTube videos and knowing that I'm a bit of a stickler for details and a perfectionist, I designed my YouTube banner and video thumbnails: that's how I got into the design business.
+
+            As my design skills grew, I thought why not offer my skills to other youtubers. That's how I started to get clients and to make YouTube thumbnails and banners.
+
+            In April 2018, I did a internship in a web agency (<a href="https://webimpulse.fr">Web Impulse</a>). This agency is specialized in website creation and web development. This internship confirmed my choice to make web development my livelihood. It's at this period that I started to work on UI Design (in addition to Graphic Design).
+
+            In February 2019, I said to myself why not do the #100daysofcode (a challenge that consists in learning a lot of things related to code in 100 days) and share my progress with other developers. That's what I did. I had opened my Instagram account (<a href="https://haroldao.com/instagram">harold.ao</a> previously <a href="https://instagram.com/harold.codes">harold.codes</a>). At that point, I took web development seriously.
+
+            It is with motivation and ambition that I wish to develop my skills from day to day because I want to continue to learn and create beautiful things.
+
+        {% endcapture %}
+        <p class="about__more">
+            {{ about_more | newline_to_br }}
         </p>
         <div class="image__wrapper">
-            <img src="https://ucarecdn.com/04464664-bd9f-44a1-b6f5-4070140248c7/-/format/webp/" alt="Computer on a desk">
+            <img src="https://ucarecdn.com/04464664-bd9f-44a1-b6f5-4070140248c7/-/format/webp/"
+                alt="Computer on a desk">
         </div>
     </section>
 

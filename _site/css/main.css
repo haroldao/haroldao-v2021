@@ -720,7 +720,7 @@ footer .footer__two ul li:not(:last-child) {
   flex-direction: column;
 }
 .about__page .about__long-description p {
-  font-size: 2rem;
+  font-size: 1.3rem;
   width: auto !important;
 }
 @media (min-width: 901px) {
@@ -729,6 +729,9 @@ footer .footer__two ul li:not(:last-child) {
   }
   .about__page .about__long-description p {
     width: 50% !important;
+  }
+  .about__page .about__long-description .about__more {
+    margin-right: 40px;
   }
 }
 .about__page .about__long-description .image__wrapper {

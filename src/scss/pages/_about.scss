@@ -132,13 +132,17 @@
     .about__long-description{
         flex-direction: column;
         p{
-            font-size: 2rem;
+            font-size: 1.3rem;
             width: auto !important;
         }
         @include media(">desktop"){
             flex-direction: unset;
             p{
                 width: 50% !important;
+            }
+            .about__more{
+                margin-right: 40px;
+                line-height: 1.4;
             }
         }
         .image__wrapper{
