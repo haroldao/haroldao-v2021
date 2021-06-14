@@ -732,6 +732,7 @@ footer .footer__two ul li:not(:last-child) {
   }
   .about__page .about__long-description .about__more {
     margin-right: 40px;
+    line-height: 1.4;
   }
 }
 .about__page .about__long-description .image__wrapper {
