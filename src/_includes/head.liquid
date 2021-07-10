@@ -6,7 +6,11 @@
     <title>{{ site.title }}</title>
 {% endif %}
 
-<meta name="description" content="{{ description }}">
+{% if description %}
+    <meta name="description" content="{{ description }}"> 
+{% else %}
+    <meta name="description" content="{{ site.description }}"> 
+{% endif %}
 <meta name="title" content="{{ title }}">
   
 <!-- Open Graph / Facebook -->
