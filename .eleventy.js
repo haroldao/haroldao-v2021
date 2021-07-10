@@ -26,7 +26,7 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addWatchTarget("./src/scss/");
   eleventyConfig.addPassthroughCopy("./src/css");
   eleventyConfig.addPassthroughCopy("_redirects");
-  eleventyConfig.addPassthroughCopy(".src/robot.txt");
+  eleventyConfig.addPassthroughCopy("./src/robots.txt");
   eleventyConfig.addPassthroughCopy("./src/js/app.js");
 
   // @see https://github.com/eeeps/eleventy-respimg
