@@ -10,7 +10,7 @@ projectUrl: https://www.daanasaakena.com/
 tags:
   - work
 year: "2021"
-task: "development, shopify theme customization "
+task: "web development, shopify theme customization "
 subHeading: Daana Saakena
 date: 2021-08-18
 ---
