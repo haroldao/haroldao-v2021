@@ -1,5 +1,5 @@
 ---
-published: true
+published: false
 available: false
 title: Front-End Mastery
 description: Front-End Mastery
