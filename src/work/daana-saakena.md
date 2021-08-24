@@ -13,9 +13,9 @@ color: "#7c5c3d"
 projectUrl: https://www.daanasaakena.com/
 tags:
   - work
-  - Shopify theme development
+  - Shopify Theme Development
 year: "2021"
-task: "web development, shopify theme customization "
+task: "Web Development, Shopify Theme Customization "
 subHeading: Daana Saakena
 date: 2021-08-18
 ---
