@@ -7,7 +7,7 @@ workTitle: Daana Saakena
 workDescription: Founded by Daana Saakena Diaz Madrid, the daana saakena brand
   was inspired by her mother’s vintage handbags. The design of this shop was
   done by <a href="https://tiffanyapril.co">Tiffany April.</a>
-color: "#dfdad6"
+color: "#7c5c3d"
 projectUrl: https://www.daanasaakena.com/
 tags:
   - work
