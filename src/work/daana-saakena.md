@@ -6,9 +6,8 @@ description: Daana Saakena
 workTitle: Daana Saakena
 workDescription: A collaboration with <a
   href="https://tiffanyapril.co/?ref=haroldao.com">Tiffany April (Designer).</a>
-  <br><br> Daana Saakena is a Luxury Handbags brand for modern women. Founded by
-  Daana Saakena Diaz Madrid, the daana saakena brand was inspired by her
-  mother’s vintage handbags.
+  <br><br> daana saakena Timeless, Deliberate, Architectural. Luxury handbags
+  built to stand the test of time. Made in Italy.
 color: "#7c5c3d"
 projectUrl: https://www.daanasaakena.com/
 tags:
