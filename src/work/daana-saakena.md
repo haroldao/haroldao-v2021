@@ -2,7 +2,7 @@
 published: true
 available: true
 title: daana saakena
-description: daana saakena
+description: daana saakena - Luxury handbags built to stand the test of time
 workTitle: daana saakena
 workDescription: A collaboration with <a
   href="https://tiffanyapril.co/?ref=haroldao.com">Tiffany April (Designer).</a>
