@@ -5,7 +5,7 @@ title: daana saakena
 description: daana saakena - Luxury handbags built to stand the test of time
 workTitle: daana saakena
 workDescription: A collaboration with <a
-  href="https://tiffanyapril.co/?ref=haroldao.com">Tiffany April (Designer).</a>
+  href="https://tiffanyapril.co/?ref=haroldao.com">Tiffany April (Designer)</a>
   <br><br> Timeless, Deliberate, Architectural. Luxury handbags built to stand
   the test of time. Made in Italy.
 clientName: daana saakena
