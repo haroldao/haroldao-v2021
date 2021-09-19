@@ -57,6 +57,18 @@
     text-align: center;
     padding: $container-padding-mobile;
     max-width: 1080px;
+    position: relative;
+    
+    a:after {
+        content: "↗";
+        position: absolute;
+        font-size: 12px;
+        margin-left: 6px;
+        top: 0;
+        /* vertical-align: super; */
+        top: 50%;
+        transform: translateY(-50%);
+    }
 }
 .content{
     padding: 0 3vw;
