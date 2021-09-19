@@ -58,7 +58,9 @@
     padding: $container-padding-mobile;
     max-width: 1080px;
     position: relative;
-    
+    a{
+        position: relative;
+    }
     a:after {
         content: "↗";
         position: absolute;
