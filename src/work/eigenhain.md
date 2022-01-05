@@ -8,6 +8,7 @@ clientName: Eigenhain
 projectUrl: https://shop.eigenhain.com
 tags:
   - work
+  - Shopify Theme Development
 year: "2022"
 task: development, shopify theme development
 subHeading: Eigenhain
