@@ -1,5 +1,5 @@
 ---
-published: false
+published: true
 available: false
 title: Eigenhain
 description: Eigenhain
