@@ -14,4 +14,5 @@ year: "2022"
 task: Development, Shopify theme development
 subHeading: Eigenhain
 date: 2022-01-05
+featureImage: null
 ---
