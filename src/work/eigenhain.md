@@ -1,16 +1,17 @@
 ---
 published: true
-available: false
+available: true
 title: Eigenhain
-description: Eigenhain
-workTitle: Eigenhain
+description: EIGENHAIN is a german skincare brand
+workTitle: Eigenhain Skincare
+workDescription: EIGENHAIN is a german skincare brand
 clientName: Eigenhain
-projectUrl: https://shop.eigenhain.com
+projectUrl: https://eigenhain.com
 tags:
   - work
   - Shopify Theme Development
 year: "2022"
-task: development, shopify theme development
+task: Development, Shopify theme development
 subHeading: Eigenhain
 date: 2022-01-05
 ---
