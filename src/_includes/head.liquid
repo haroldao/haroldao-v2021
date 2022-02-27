@@ -21,8 +21,8 @@
 <meta property="og:title" content="{{ title }}">
 <meta property="og:description" content="{{ description }}">
 
-{% if featuredImg %}
-<meta property="og:image" content="">
+{% if featureImage %}
+<meta property="og:image" content="{{ featureImage }}">
 {% else %}
 <meta property="og:image" content="https://ucarecdn.com/7e98e68f-b5b1-49fd-a2a6-fb14febf8689/-/format/webp/">
 {% endif %}
@@ -33,8 +33,8 @@
 <meta property="twitter:title" content="{{ title }}">
 <meta property="twitter:description" content="{{ description }}">
 
-{% if featuredImg %}
-<meta property="twitter:image" content="">
+{% if featureImage %}
+<meta property="twitter:image" content="{{ featureImage }}">
 {% else %}
 <meta property="twitter:image" content="https://ucarecdn.com/7e98e68f-b5b1-49fd-a2a6-fb14febf8689/-/format/webp/">
 {% endif %}
