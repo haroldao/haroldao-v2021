@@ -7,6 +7,7 @@ workTitle: Eigenhain Skincare
 workDescription: EIGENHAIN is a german skincare brand. Design by <a
   href="https://www.dennisadelmann.de/?ref=haroldao.com">Dennis Adelmann</a>
 clientName: Eigenhain
+color: "#395C83"
 projectUrl: https://eigenhain.com
 tags:
   - work
