@@ -1,5 +1,5 @@
 ---
-title: Romain Lanery - Photomanipulation
+title: Romain Lanery
 description:
 featureImage: https://res.cloudinary.com/haroldao/image/upload/v1623180882/Romain%20Lanery%20-%20Photo%20Manipulation%20%28Challenge%20Fiverr%29.webp
 tags:
