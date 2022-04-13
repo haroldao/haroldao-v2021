@@ -1,43 +1,27 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-{% if title %}
-    <title>{{ title }}</title>
-{% else %}
-    <title>{{ site.title }}</title>
-{% endif %}
+<title>{{ title | default: site.title }}</title>
 
-{% if description %}
-    <meta name="description" content="{{ description }}"> 
-{% else %}
-    <meta name="description" content="{{ site.description }}"> 
-{% endif %}
-<meta name="title" content="{{ title }}">
+<meta name="description" content="{{ description | default: site.description }}"> 
+<meta name="title" content="{{ title | default: site.title }}">
 
 <meta name="google-site-verification" content="pXhqXSoicXgqODsICk5dWg8L2DFy-dbGcZFW-L5_3N8" />
 
 <!-- Open Graph / Facebook -->
 <meta property="og:type" content="website">
 <meta property="og:url" content="{{ page.url | url }}">
-<meta property="og:title" content="{{ title }}">
-<meta property="og:description" content="{{ description }}">
+<meta property="og:title" content="{{ title | default: site.title }}">
+<meta property="og:description" content="{{ description | default: site.description }}">
+<meta property="og:image" content="{{ featureImage | default: https://ucarecdn.com/7e98e68f-b5b1-49fd-a2a6-fb14febf8689/-/format/webp/ }}">
 
-{% if featureImage %}
-<meta property="og:image" content="{{ featureImage }}">
-{% else %}
-<meta property="og:image" content="https://ucarecdn.com/7e98e68f-b5b1-49fd-a2a6-fb14febf8689/-/format/webp/">
-{% endif %}
 
 <!-- Twitter -->
 <meta property="twitter:card" content="summary_large_image">
 <meta property="twitter:url" content="{{ page.url | url }}">
-<meta property="twitter:title" content="{{ title }}">
-<meta property="twitter:description" content="{{ description }}">
+<meta property="twitter:title" content="{{ title | default: site.title }}">
+<meta property="twitter:description" content="{{ description | default: site.description }}">
+<meta property="twitter:image" content="{{ featureImage | default: https://ucarecdn.com/7e98e68f-b5b1-49fd-a2a6-fb14febf8689/-/format/webp/ }}">
 
-{% if featureImage %}
-<meta property="twitter:image" content="{{ featureImage }}">
-{% else %}
-<meta property="twitter:image" content="https://ucarecdn.com/7e98e68f-b5b1-49fd-a2a6-fb14febf8689/-/format/webp/">
-{% endif %}
 
 <link rel="preload" href="/src/fonts/MonumentExtended-Regular.woff2" crossorigin="anonymous" as="font" type="font/woff2">
 <link rel="preload" href="/src/fonts/MonumentExtended-Regular.woff" crossorigin="anonymous" as="font" type="font/woff">
