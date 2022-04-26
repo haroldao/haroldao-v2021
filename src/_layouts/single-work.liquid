@@ -6,6 +6,10 @@ layout: work.liquid
 {% if featureImage %}
     <section class="work__feature-image">
         <img src="{{ featureImage }}" alt="{{ featureImage.alt }}">
+        
+        {% if imageCredit != blank %}
+            <p class="image-credit">{{ imageCredit }}</p>
+        {% endif %}
     </section>
 {% endif %}
 

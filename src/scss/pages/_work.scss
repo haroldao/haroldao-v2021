@@ -4,6 +4,15 @@
 }
 
 .work__feature-image{
+    margin-bottom: 5rem;
+    
+    p.image-credit {
+        font-size: .8rem;
+        margin-top: 12px;
+        padding: 0 10px;
+        display: inline-block;
+    }
+
     img{
         width: 100%;
         height: auto;

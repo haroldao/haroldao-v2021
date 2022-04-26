@@ -232,6 +232,12 @@ collections:
           required: false,
         }
       - {
+          label: "Credit Image",
+          name: "imageCredit",
+          widget: "string",
+          required: false,
+        }
+      - {
           label: "Body",
           name: "body",
           widget: "markdown",
