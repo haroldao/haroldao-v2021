@@ -12,4 +12,5 @@ task: Shopify Theme Development, Motion
 subHeading: Drink Natz is a french hard seltzer
 date: 2022-04-26
 featureImage: https://res.cloudinary.com/haroldao/image/upload/f_auto,q_auto/v1650996531/Drink_Natz_Cover_wka9ku.webp
+imageCredit: Photo © Natz
 ---
