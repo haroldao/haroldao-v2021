@@ -18,10 +18,15 @@
                 cursor: not-allowed;
                 pointer-events: none;
             }
+            
+            .disabled .img {
+                opacity: 0.6;
+            }
+
             .image__wrapper{
                 position: relative;
 
-                .work-unvailable{
+                .work-unavailable{
                     position: absolute;
                     inset: 0;
                     z-index: 11;
