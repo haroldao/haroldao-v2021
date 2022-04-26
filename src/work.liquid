@@ -24,14 +24,15 @@ title: "Work | Harold AO"
                             <div class="tags">
                                 <p>
                                     {% for tag in work.data.tags %}
-                                    {{ tag.last }}
-                                    {% unless tag == "work" %}
-                                    <span>{{tag }}</span>
-                                    {% endunless %}
+                                        {{ tag.last }}
+                                        {% unless tag == "work" %}
+                                            <span>{{tag }}</span>
+                                        {% endunless %}
                                     {% endfor %}
                                 </p>
                             </div>
                         </div>
+                        
                         <h2>{{ work.data.title }}</h2>
                     </a>
                 </div>

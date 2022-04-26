@@ -25,7 +25,7 @@
                     position: absolute;
                     inset: 0;
                     z-index: 11;
-                    mix-blend-mode: difference;
+                    mix-blend-mode: color-burn;
                     pointer-events: none;
                     user-select: none;
                 }
