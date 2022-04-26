@@ -20,6 +20,16 @@
             }
             .image__wrapper{
                 position: relative;
+
+                .work-unvailable{
+                    position: absolute;
+                    inset: 0;
+                    z-index: 11;
+                    mix-blend-mode: difference;
+                    pointer-events: none;
+                    user-select: none;
+                }
+
                 .tags{
                     display: inline-block;
                     position: absolute;

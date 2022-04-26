@@ -13,13 +13,14 @@ title: "Work | Harold AO"
                 <div class="work">
                     <a {% if work.data.available %}href="{{work.url}}" {% endif %}{% if work.data.available == false %}class="disabled" disabled="disabled"{% endif %}>
                         <div class="image__wrapper">
+                            {% if work.data.available == false %}
+                                <img class="work-unvailable" src="https://res.cloudinary.com/haroldao/image/upload/f_auto,q_auto/v1623248631/Coming_Soon_kzev2y.webp" alt="">
+                            {% endif %}
+
                             <div class="img">
-                                {% if work.data.available == false %}
-                                    <img src="https://res.cloudinary.com/haroldao/image/upload/f_auto,q_auto/v1623248631/Coming_Soon_kzev2y.webp" alt="">
-                                {% else %}
-                                    <img src="{{ work.data.featureImage }}" alt="{{ work.data.featureImage.alt }}">
-                                {% endif %}
+                                <img src="{{ work.data.featureImage }}" alt="{{ work.data.featureImage.alt }}">
                             </div>
+
                             <div class="tags">
                                 <p>
                                     {% for tag in work.data.tags %}
