@@ -6,7 +6,7 @@ description: Natz is a hard seltzer or alcoholic water created by two French ent
 workTitle: Natz
 tags:
   - work
-  - Shopify theme development
+  - Shopify Theme Development
 year: "2022"
 task: Shopify Theme Development, Motion
 subHeading: Drink Natz is a french hard seltzer
