@@ -19,4 +19,5 @@ task: "Web Development, Shopify Theme Customization "
 subHeading: daana saakena
 date: 2021-08-18
 featureImage: https://res.cloudinary.com/haroldao/image/upload/f_auto,q_auto/v1630529378/daana-saakena-cover_iqfvj5.webp
+imageCredit: "Photo © Daana Saakena "
 ---
