@@ -30,11 +30,18 @@ footer{
         flex-direction: column;
         transform: translateY(100%);
         transition: all 2s $cubic-bezier-2;
+
+        .design-rush{
+            margin-top: .5rem;
+            // font-size: 14px;
+            font-size: 1.5vh;
+        }
         ul{
+            margin-top: 4rem;
+            
             @include media(">desktop"){
                 margin-top: 0;
             }
-            margin-top: 1rem;
             li{
                 text-transform: uppercase;
                 display: inline-block;

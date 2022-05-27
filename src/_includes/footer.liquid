@@ -2,26 +2,29 @@
     <div class="footer__one">
         <span class="canela">Say Hello, I won't bite... 🤗</span>
         <div class="contact__mail">
-            <a title="Click me to send an email" href="mailto:{{ site.socials.email }}">{{ site.socials.email }}</a>
+            <a href="mailto:{{ site.socials.email }}" title="Click me to send an email">{{ site.socials.email }}</a>
         </div>
     </div>
-   {% assign year = "now" | date: "%Y" %}
+    {% assign year = "now" | date: "%Y" %}
     <div class="footer__two anim">
-        © {{ year }} -<br /> ALL RIGHTS RESERVED.
+        <div>
+            <span>© {{ year }} -<br/> ALL RIGHTS RESERVED.</span>
+            <div class="design-rush">This website was designed as Best Portfolio Design by <a href="http://www.designrush.com/best-designs/websites">DesignRush</a></div>
+        </div>
         <ul>
-        {% for item in site.socials %}
-        {%- comment -%}Exclude figma and email{%- endcomment -%}
-        {% if item[0] == 'figma' %}
-        {% continue %}
-        {% endif %}
+            {% for item in site.socials %}
+                {%- comment -%}Exclude figma and email{%- endcomment -%}
+                {% if item[0] == 'figma' %}
+                    {% continue %}
+                {% endif %}
 
-        {% if item[0] == 'email' %}
-        {% continue %}
-        {% endif %}
-            <li title="{{ item[0] }}">
-                <a href="{{ item[1] }}">{{ item[0] }}</a>   
-            </li>
-        {% endfor %}
+                {% if item[0] == 'email' %}
+                    {% continue %}
+                {% endif %}
+                <li title="{{ item[0] }}">
+                    <a href="{{ item[1] }}">{{ item[0] }}</a>
+                </li>
+            {% endfor %}
         </ul>
     </div>
 </footer>
