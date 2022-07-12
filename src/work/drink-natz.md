@@ -4,6 +4,8 @@ available: true
 title: Drink Natz
 description: Natz is a hard seltzer or alcoholic water created by two French entrepreneurs
 workTitle: Natz
+workDescription: Drink Natz is a french hard seltzer. Design by Alice Aussud
+  (Inhouse art director). Copywritting & SEO Strategy by Clémence Morel
 clientName: Natz
 projectUrl: https://drinknatz.com/
 tags:
