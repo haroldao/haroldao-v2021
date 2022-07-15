@@ -9,6 +9,7 @@ workDescription: Drink Natz is a french hard seltzer. Design by <a
   director). Copywritting & SEO Strategy by <a
   href="https://clemencemorelredactrice.fr/?ref=haroldao.com">Clémence Morel</a>
 clientName: Natz
+color: "#b9784a"
 projectUrl: https://drinknatz.com/
 tags:
   - work
