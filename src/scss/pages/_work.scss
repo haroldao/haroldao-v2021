@@ -69,16 +69,15 @@
     position: relative;
     a{
         position: relative;
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
     }
     a:after {
         content: "↗";
-        position: absolute;
-        font-size: 12px;
+        font-size: 15px;
         margin-left: 6px;
-        top: 0;
-        /* vertical-align: super; */
-        top: 50%;
-        transform: translateY(-50%);
+        display: flex;
     }
 }
 .content{
