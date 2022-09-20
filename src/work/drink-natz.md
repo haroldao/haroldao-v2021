@@ -7,7 +7,9 @@ workTitle: Natz
 workDescription: Drink Natz is a french hard seltzer. Design by <a
   href="https://aliceaussud.com/?ref=haroldao.com">Alice Aussud</a> (Inhouse art
   director). Copywritting & SEO Strategy by <a
-  href="https://clemencemorelredactrice.fr/?ref=haroldao.com">Clémence Morel</a>
+  href="https://clemencemorelredactrice.fr/?ref=haroldao.com">Clémence
+  Morel</a>. <br><br> Awarding winning website designs on <a
+  href="https://designrush.com/best-designs/websites"> DesignRush</a>
 clientName: Natz
 color: "#8c717f"
 projectUrl: https://drinknatz.com/
