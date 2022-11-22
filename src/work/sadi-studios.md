@@ -1,5 +1,5 @@
 ---
-published: false
+published: true
 available: true
 title: Sadi Studios
 description: Sadi Studios
